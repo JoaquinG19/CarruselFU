@@ -3264,6 +3264,255 @@ h3 {
   font-style: italic;
 }
 
+/* estilosFundacionUnifranz.css */
+@font-face {
+  font-family: 'Montserrat Black Italic';
+  src: url('/assets/fonts/FontsFree-Net-Montserrat-BlackItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.h1-accion-rec{
+  font-weight: bold;
+  font-family: 'Montserrat Black Italic', sans-serif;
+}
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.custom-text {
+  text-align: justify; /* Justifica el texto */
+  font-style: normal;
+}
+
+.custom-column-img {
+  align-items: center;
+  margin-right: -200px;
+  margin-left: -200px;
+}
+
+.custom-column-1 {
+  max-width: 340px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+  /margin: auto;/
+}
+
+.custom-column-2 {
+  max-width: 360px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+  /margin: auto;/
+}
+
+.image-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen */
+}
+
+.rotated-image {
+  transform: rotate(270deg); /* Gira la imagen 270 grados */
+}
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .rotated-image {
+      justify-content: center;
+      transform: rotate(0deg);
+      width: 300px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+  .custom-column-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rotated-image {
+      justify-content: center;
+      transform: rotate(0deg);
+      width: 200px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+  .custom-column-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+  }
+}
+
+/* doname*/
+.container-doname {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-column-doname {
+  max-width: 570px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+  /margin: auto;/
+}
+
+@font-face {
+  font-family: "Montserrat-BlackItalic";
+  src: url("assets/fonts/FontsFree-Net-Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h1-doname {
+  text-align: right;
+  font-family: 'Montserrat Black Italic', sans-serif;
+  font-size: 41px;
+}
+
+.doname-img{
+  margin-top: -53px;
+}
+
+@media (max-width: 768px) {
+  .doname-img {
+    margin-top: 20px;
+      justify-content: center;
+      width: 300px; /* Ajusta el tamaño para dispositivos medianos */
+      height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .doname-img {
+      margin-top: 20px;
+      justify-content: center;
+      width: 150px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+}
+
+.text-rojo {
+  background-color: red;
+  text-align: center;
+  border-radius: 10%;
+  width: auto;
+  height: auto;
+  font-size: 80%;
+  color: white;
+}
+
+.text-fondo {
+  max-width: 350px;
+}
+
+@font-face {
+  font-family: "Reisenberg";
+  src: url("assets/fonts/Reisenberg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h2-accion-rec {
+  font-family: "Spicy Rice", serif;
+  font-size: 37px;
+}
+
+.h3-doname {
+  font-family: "Modak", system-ui;
+  font-size: 24px;
+}
+/* chanchito */
+
+.h1-chanchito {
+  text-align: right;
+  font-family: 'Montserrat Black Italic', sans-serif;
+}
+
+.custom-text-chanchito-1 {
+  text-align: right;
+  text-align: justify; /* Justifica el texto */
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 100px;
+}
+.custom-text-chanchito-2 {
+  text-align: left;
+  text-align: justify; /* Justifica el texto */
+  font-style: normal;
+  font-size: 16px;
+  margin-right: 110px;
+}
+
+.custom-column-chanchito {
+  text-align: right;
+  max-width: 445px;
+  margin-left: 445px;
+}
+
+.h1-chanchito-2 {
+  text-align: left;
+  font-family: 'Montserrat Black Italic', sans-serif;
+}
+
+.custom-column-chanchito-2 {
+  max-width: 100%;
+}
+
+.img-corazon {
+  margin-left: -50px;
+}
+
+.custom-column-chanchito{
+  align-content: center;
+  width: 900px;
+  margin-top: -200px;
+}
+
+.chanchito-izquierda {
+  width: 320px;
+  height: auto;
+  margin-left: -70px;
+}
+
+.chanchito-derecha {
+  width: 480px;
+  height: auto;
+  margin-left: 170px;
+}
+
+.sana-1 {
+  position: relative;
+  margin-top: -160px;
+  margin-left: 230px;
+}
+
+.sana-2 {
+  position: relative;
+  margin-top: -220px;
+  margin-left: 20px;
+  
+}
+
+.sana-3 {
+  position: relative;
+  margin-top: -280px;
+  margin-right: -700px;
+  margin-left: 430px;
+}
+.doname-img-1{
+  filter: drop-shadow(5px 5px 25px);
+  color: white;
+}
 
 
 
