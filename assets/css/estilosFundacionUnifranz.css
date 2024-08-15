@@ -1667,316 +1667,6 @@ h3 {
     margin-top: -274px;
     margin-left: 50px;
   }
-
-  /*--------NUESTROS PROYECTOS-------*/
-  .marconuestros {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
-    left: auto;
-    width: 8%; /* Ajusta el ancho según sea necesario */
-    background-color: #cecece; /* Color de fondo */
-    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
-  }
-
-  .carousel-item.tamañocarruselnuestro {
-    /* No uses flex si prefieres evitar que el contenido se desplace con cambios en el zoom */
-    display: block; /* Cambia a block para que no dependa de flex */
-    min-height: 100vh;
-    position: relative; /* Añade position relative para controlar el contenido */
-  }
-  
-  .container-nuestrosp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .content-wrapper {
-    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
-    top: 50%; 
-    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
-    text-align: center;
-    width: 100%;
-    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
-  }
-  
-  .proyectos-titulo {
-    color: #fff;
-    text-align: left;
-    transform: skew(-10deg);
-    font-size: 10rem; /* Tamaño de la fuente ajustable según necesidad */
-    font-weight: bold;
-    margin: 0; /* Eliminar margen por defecto */
-  }
-  
-  .bg-right-column {
-    background-color: #cecece;
-    min-height: 100vh; /* Para asegurar que ocupa el 100% de la vista */
-  }
-  
-  .proyectos-ima {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .proyecto-img {
-    width: 80%;
-    height: auto;
-    max-width: 1000px;
-    object-fit: contain;
-  }
-  
-  .proyecto-img:hover {
-    transform: scale(1.5);
-  }
-
-  .img-proyecto {
-    max-height: 100px; /* Ajusta esta altura según lo necesario */
-    max-width: 150px; /* Ajusta este ancho según lo necesario */
-    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
-    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
-  }
-
-  .img-naccionrec, .img-ndoname {
-    max-height: 150px; /* Ajusta esta altura según lo necesario */
-    max-width: 150px; /* Ajusta este ancho según lo necesario */
-    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
-    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
-  }
-
-  .img-ncausahay{
-    max-height: 75px; /* Ajusta esta altura según lo necesario */
-    max-width: 75px; /* Ajusta este ancho según lo necesario */
-    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
-    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
-  }
-
-  .img-ntriqui, .img-nchanchito, .img-nhxe {
-    max-height: 100px; /* Ajusta esta altura según lo necesario */
-    max-width: 100px; /* Ajusta este ancho según lo necesario */
-    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
-    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
-  }
-
-  .col-auto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-
-  /*--------CAUSA HAY-------*/
-
-  .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
-    display: block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos específicos para los títulos */
-  .que-es-title {
-    background-color: black;
-    font-size: 40px;
-    color: #f3961e; /* Color especificado para ¿QUÉ ES? */
-  }
-  
-  .como-participar-title {
-    background-color: black;
-    font-size: 40px;
-    color: #3da936; /* Color especificado para ¿CÓMO PARTICIPAR? */
-  }
-  
-  .description-text {
-    text-align: justify;
-    font-size: 25px; /* Ajusta el tamaño de letra según sea necesario */
-    color: #fff; /* Color blanco para el texto */
-    font-weight: normal; /* Asegura que el texto no esté en negrita */
-  }
-  
-  .container-principal {
-    padding: 0 15px;
-  }
-  
-  /* Estilos para las imágenes en la primera columna */
-  .img-container {
-    position: relative;
-    width: auto; /* Permite que el contenedor se ajuste al contenido */
-    height: 400px; /* Ajusta la altura según sea necesario */
-    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
-  }
-  
-  .img-logo {
-    width: 80%; /* Ajusta el tamaño del logo según sea necesario */
-    max-width: 300px; /* Ajusta el tamaño máximo del logo */
-    position: absolute;
-    bottom: 165px; /* Ajusta la posición vertical del logo */
-    z-index: 1; /* Asegura que el logo esté debajo del caldo */
-  }
-  
-  .img-caldo {
-    width: 100%; /* Ajusta el tamaño del logo según sea necesario */
-    max-width: 550px; /* Ajusta el tamaño máximo del logo */
-    position: absolute;
-    top: 80px; /* Ajusta la posición vertical del caldo */
-    z-index: 2; /* Asegura que el caldo esté encima del logo */
-  }
-  
-  .logo-causa-hay {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: 800px; /* Ajusta el máximo ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    left: 60%;
-    transition: transform 0.3s ease-in-out; /* Añade una transición suave para los cambios de tamaño */
-  }
-  
-  .logo-causa-hay:hover {
-    transform: scale(1.1); /* Agranda la imagen un 10% al pasar el ratón */
-  }
-
-  .marcocausahay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
-    left: auto;
-    width: 8%; /* Ajusta el ancho según sea necesario */
-    background-color: #22aee4; /* Color de fondo */
-    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
-  }
-
-  .marcocuchara {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    right: 20px;
-    left: auto;
-    top: -20%; /* Agregamos esta propiedad */
-    transform: translateY(
-      20%
-    ); /* Ajustamos el valor para centrarlo verticalmente */
-    z-index: 2;
-  }
-
-  /*--------HAZLO X ELLOS-------*/
-  .section-title-hxe {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
-    display: block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  }
-  
-  .description-text-hxe {
-    font-size: 15px; /* Ajusta el tamaño del texto */
-    color: #fff; /* Color del texto */
-    text-align: center; /* Alineación centrada del texto */
-    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina padding predeterminado */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    position: relative; /* Para el uso de posicionamiento absoluto */
-  }
-
-  .description-text-hxe2 {
-    text-align: right; /* Alinea el texto a la derecha */
-    font-size: 25px; /* Ajusta el tamaño de letra según sea necesario */
-    color: #fff; /* Color blanco para el texto */
-    font-weight: normal; /* Asegura que el texto no esté en negrita */
-    margin: 0; /* Elimina márgenes predeterminados si es necesario */
-    padding: 0; /* Elimina padding predeterminado si es necesario */
-  }
-
-  .sub-section-title {
-    text-align: right; /* Alinea el título a la derecha */
-    font-size: 15px; /* Ajusta el tamaño de letra del título si es necesario */
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
-  }
-
-  /* Asegúrate de que el contenedor tenga una posición relativa para que el posicionamiento absoluto funcione */
-  .container-fluid {
-    position: relative;
-  }
-
-  .img-recurso-manual {
-    position: absolute;
-    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
-    max-width: 100%; /* Limita el tamaño máximo para que no se desborde */
-    height: auto; /* Mantiene la proporción de la imagen */
-    left: 10%; /* Ajusta la posición horizontal para mover la imagen a la izquierda */
-    bottom: 10px; /* Ajusta la posición vertical para pegarla al fondo del contenedor */
-  }
-
-  .hxe-col3{
-    margin-top: 0;
-  }
-
-  .hxe-img{
-    width: 600px;
-  }
-
-  .marco-perro {
-    position: absolute;
-    height: 50%;
-    bottom: 0;
-    right: 0;
-    left: auto;
-    top: 40%; /* Agregamos esta propiedad */
-    transform: translateY(
-      20%
-    ); /* Ajustamos el valor para centrarlo verticalmente */
-    z-index: 2;
-  }
-
-  .marcohxe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
-    left: auto;
-    width: 8%; /* Ajusta el ancho según sea necesario */
-    background-color: #cecece; /* Color de fondo */
-    transform: translate(16%, -25%);
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    background-position: left center; /* Alinea la imagen al lado izquierdo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    z-index: 1;
-  }
-
-
-  /*--------TRIQUI TRUEQUE-------*/
-  /* Ajuste de tamaño del carrusel */
-  .img-container-triqui {
-    position: relative;
-    width: auto; /* Permite que el contenedor se ajuste al contenido */
-    height: 600px; /* Ajusta la altura según sea necesario */
-    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra las imágenes verticalmente */
-  }
-
-  .marconuestrostriqui {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
-    left: auto;
-    width: 8%; /* Ajusta el ancho según sea necesario */
-    background-color: #cecece; /* Color de fondo */
-    transform: translate(16%, -25%);
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-  }
 }
 
 /* ----------TAMAÑO PARA CELULAR---------------- */
@@ -3257,6 +2947,8 @@ h3 {
   }
 }
 
+/* -------------ESTILOS CARRUSEL FU----------------------- */
+
 @font-face {
   font-family: 'Montserrat Black Italic';
   src: url('/assets/fonts/FontsFree-Net-Montserrat-BlackItalic.ttf') format('truetype');
@@ -3264,6 +2956,655 @@ h3 {
   font-style: italic;
 }
 
+/* -------------TAMAÑO PARA LAPTOPS Y PC----------------------- */
+
+@media screen and (min-width: 1280px) {
+  .tamañocarru{
+    height: 730px; width: 100%;
+  }
+
+  /*--------NUESTROS PROYECTOS-------*/
+  .marconuestros {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+  }
+
+  .carousel-item.tamañocarruselnuestro {
+    /* No uses flex si prefieres evitar que el contenido se desplace con cambios en el zoom */
+    display: block; /* Cambia a block para que no dependa de flex */
+    min-height: 100vh;
+    position: relative; /* Añade position relative para controlar el contenido */
+  }
+  
+  .container-nuestrosp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content-wrapper {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
+  }
+  
+  .proyectos-titulo {
+    color: #fff;
+    text-align: left;
+    transform: skew(-10deg);
+    font-size: 10rem; /* Tamaño de la fuente ajustable según necesidad */
+    font-weight: bold;
+    margin: 0; /* Eliminar margen por defecto */
+  }
+  
+  .bg-right-column {
+    background-color: #cecece;
+    min-height: 100vh; /* Para asegurar que ocupa el 100% de la vista */
+  }
+  
+  .proyectos-ima {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .proyecto-img {
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    object-fit: contain;
+  }
+  
+  .proyecto-img:hover {
+    transform: scale(1.5);
+  }
+
+  .img-proyecto {
+    max-height: 100px; /* Ajusta esta altura según lo necesario */
+    max-width: 150px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-naccionrec, .img-ndoname {
+    max-height: 150px; /* Ajusta esta altura según lo necesario */
+    max-width: 150px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-ncausahay{
+    max-height: 75px; /* Ajusta esta altura según lo necesario */
+    max-width: 75px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-ntriqui, .img-nchanchito, .img-nhxe {
+    max-height: 100px; /* Ajusta esta altura según lo necesario */
+    max-width: 100px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .col-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
 
+  /*--------CAUSA HAY-------*/
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos específicos para los títulos */
+  .que-es-title {
+    background-color: black;
+    font-size: 35px;
+    color: #f3961e; /* Color especificado para ¿QUÉ ES? */
+  }
+  
+  .como-participar-title {
+    background-color: black;
+    font-size: 35px;
+    color: #3da936; /* Color especificado para ¿CÓMO PARTICIPAR? */
+  }
+  
+  .description-text {
+    text-align: justify;
+    font-size: 20px; /* Ajusta el tamaño de letra según sea necesario */
+    color: #fff; /* Color blanco para el texto */
+    font-weight: normal; /* Asegura que el texto no esté en negrita */
+  }
+  
+  .container-principal {
+    padding: 0 15px;
+  }
+  
+  /* Estilos para las imágenes en la primera columna */
+  .img-container {
+    position: relative;
+    width: auto; /* Permite que el contenedor se ajuste al contenido */
+    height: 400px; /* Ajusta la altura según sea necesario */
+    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+  
+  .img-logo {
+    width: 80%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 300px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    bottom: 165px; /* Ajusta la posición vertical del logo */
+    z-index: 1; /* Asegura que el logo esté debajo del caldo */
+  }
+  
+  .img-caldo {
+    width: 100%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 550px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    top: 80px; /* Ajusta la posición vertical del caldo */
+    z-index: 2; /* Asegura que el caldo esté encima del logo */
+  }
+  
+  .logo-causa-hay {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 800px; /* Ajusta el máximo ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    left: 60%;
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave para los cambios de tamaño */
+  }
+  
+  .logo-causa-hay:hover {
+    transform: scale(1.1); /* Agranda la imagen un 10% al pasar el ratón */
+  }
+
+  .marcocausahay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #22aee4; /* Color de fondo */
+    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+  }
+
+  .marcocuchara {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 20px;
+    left: auto;
+    top: -20%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    z-index: 2;
+  }
+
+  /*--------HAZLO X ELLOS-------*/
+  .section-title-hxe {
+    font-size: 35px;
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .description-text-hxe {
+    font-size: 15px; /* Ajusta el tamaño del texto */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative; /* Para el uso de posicionamiento absoluto */
+  }
+
+  .description-text-hxe2 {
+    text-align: right; /* Alinea el texto a la derecha */
+    font-size: 25px; /* Ajusta el tamaño de letra según sea necesario */
+    color: #fff; /* Color blanco para el texto */
+    font-weight: normal; /* Asegura que el texto no esté en negrita */
+    margin: 0; /* Elimina márgenes predeterminados si es necesario */
+    padding: 0; /* Elimina padding predeterminado si es necesario */
+  }
+
+  .sub-section-title {
+    text-align: right; /* Alinea el título a la derecha */
+    font-size: 15px; /* Ajusta el tamaño de letra del título si es necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  }
+
+  /* Asegúrate de que el contenedor tenga una posición relativa para que el posicionamiento absoluto funcione */
+  .container-fluid {
+    position: relative;
+  }
+
+  .img-recurso-manual {
+    position: absolute;
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    max-width: 100%; /* Limita el tamaño máximo para que no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    left: 10%; /* Ajusta la posición horizontal para mover la imagen a la izquierda */
+    bottom: 10px; /* Ajusta la posición vertical para pegarla al fondo del contenedor */
+  }
+
+  .hxe-col3{
+    margin-top: 0;
+  }
+
+  .hxe-img{
+    width: 600px;
+  }
+
+  .marco-perro {
+    position: absolute;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    top: 40%; /* Agregamos esta propiedad */
+    transform: translateX(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    transform: translateX(
+      -5%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    z-index: 1;
+  }
+
+  .marcohxe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%);
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: left center; /* Alinea la imagen al lado izquierdo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    z-index: 0;
+  }
+
+  .titulohxe-col3{
+    font-size: 20px;
+  }
+
+  .descriptionhx3-col3{
+    font-size: 33px;
+    color: #fff;
+    text-align: right;
+  }
+
+  /*---------CHANCHITO-----------*/
+  /* chanchito */
+
+  .h1-chanchito {
+    text-align: right;
+    font-family: 'Montserrat Black Italic', sans-serif;
+  }
+
+  .custom-text-chanchito-1 {
+    text-align: right;
+    text-align: justify; /* Justifica el texto */
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 100px;
+  }
+  .custom-text-chanchito-2 {
+    text-align: left;
+    text-align: justify; /* Justifica el texto */
+    font-style: normal;
+    font-size: 16px;
+    margin-right: 110px;
+  }
+
+  .custom-column-chanchito {
+    text-align: right;
+    max-width: 445px;
+    margin-left: 445px;
+  }
+
+  .h1-chanchito-2 {
+    text-align: left;
+    font-family: 'Montserrat Black Italic', sans-serif;
+  }
+
+  .custom-column-chanchito-2 {
+    max-width: 100%;
+  }
+
+  .img-corazon {
+    margin-left: -50px;
+  }
+
+  .custom-column-chanchito{
+    align-content: center;
+    width: 900px;
+    margin-top: -200px;
+  }
+
+  .chanchito-izquierda {
+    width: 320px;
+    height: auto;
+    margin-left: -70px;
+  }
+
+  .chanchito-derecha {
+    width: 480px;
+    height: auto;
+    margin-left: 170px;
+  }
+
+  .container-chanchito {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .row-chanchito {
+    display: flex;
+    width: 100%;
+  }
+  
+  .column-chanchito {
+    flex: 1;
+    text-align: center;
+  }
+
+  .marcochanchito {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%);
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: left center; /* Alinea la imagen al lado izquierdo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    z-index: 0;
+  }
+
+  /*--------TRIQUI TRUEQUE-------*/
+  /* Ajuste de tamaño del carrusel */
+  .img-container-triqui {
+    position: relative;
+    width: auto; /* Permite que el contenedor se ajuste al contenido */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+
+  .marconuestrostriqui {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%);
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+}
+
+/*--------ACCIÓN REC-------*/
+.h1-accion-rec{
+  font-weight: bold;
+  font-family: 'Montserrat Black Italic', sans-serif;
+}
+
+
+.custom-text {
+  text-align: justify; /* Justifica el texto */
+  font-style: normal;
+}
+
+.custom-column-img {
+  align-items: center;
+  margin-right: -200px;
+  margin-left: -200px;
+}
+
+.custom-column-1 {
+  max-width: 340px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+
+}
+
+.custom-column-2 {
+  max-width: 360px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+
+}
+
+.image-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen */
+}
+
+.rotated-image {
+  transform: rotate(270deg); /* Gira la imagen 270 grados */
+}
+
+.marcoaccionrec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+  left: auto;
+  width: 8%; /* Ajusta el ancho según sea necesario */
+  background-color: #355EA9; /* Color de fondo */
+  transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .rotated-image {
+      justify-content: center;
+      transform: rotate(0deg);
+      width: 300px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+  .custom-column-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rotated-image {
+      justify-content: center;
+      transform: rotate(0deg);
+      width: 200px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+  .custom-column-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: -50px;
+  }
+}
+
+/*--------DONAME-------*/
+.container-doname {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-column-doname {
+  max-width: 570px; /* Ajusta este valor según sea necesario */
+  margin: 0 50px; /* Ajusta el margen lateral aquí */
+}
+
+@font-face {
+  font-family: "Montserrat-BlackItalic";
+  src: url("assets/fonts/FontsFree-Net-Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h1-doname {
+  text-align: right;
+  font-family: 'Montserrat Black Italic', sans-serif;
+  font-size: 41px;
+}
+
+.doname-img{
+  margin-top: -53px;
+}
+
+@media (max-width: 768px) {
+  .doname-img {
+    margin-top: 20px;
+      justify-content: center;
+      width: 300px; /* Ajusta el tamaño para dispositivos medianos */
+      height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .doname-img {
+      margin-top: 20px;
+      justify-content: center;
+      width: 150px; /* Ajusta el tamaño para dispositivos medianos */
+  }
+}
+
+.text-rojo {
+  background-color: red;
+  text-align: center;
+  border-radius: 10%;
+  width: auto;
+  height: auto;
+  font-size: 80%;
+  color: white;
+}
+
+.text-fondo {
+  max-width: 350px;
+}
+
+@font-face {
+  font-family: "Reisenberg";
+  src: url("assets/fonts/Reisenberg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h2-accion-rec {
+  font-family: "Spicy Rice", serif;
+  font-size: 37px;
+}
+
+.h3-doname {
+  font-family: "Modak", system-ui;
+  font-size: 24px;
+}
+
+.marcodoname {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+  left: auto;
+  width: 8%; /* Ajusta el ancho según sea necesario */
+  background-color: #f9b038; /* Color de fondo */
+  transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+}
+
+/*--------TRIQUI TRUEQUE-------*/
+.triqui-img {
+  margin-top: 80px;
+  margin-left: 130px;
+}
+
+.h1-triqui {
+  font-family: 'Montserrat Black Italic', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.p-triqui {
+  text-align: center;
+  color: white;
+  padding: 0 42px;
+}
+
+.container-triqui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-triqui-1{
+  margin-top: 100px;
+  margin-right: 320px;
+  margin-left: -150px;
+}
+
+.text-triqui-2{
+  margin-top: 110px;
+  margin-right: 100px;
+  margin-left: 66px;
+}
+
+/*--------SANA SANA-------*/
+.sana-1 {
+  position: relative;
+  margin-top: -160px;
+  margin-left: 230px;
+}
+
+.sana-2 {
+  position: relative;
+  margin-top: -220px;
+  margin-left: 20px;
+  
+}
+
+.sana-3 {
+  position: relative;
+  margin-top: -280px;
+  margin-right: -700px;
+  margin-left: 430px;
+}
+.doname-img-1{
+  filter: drop-shadow(5px 5px 25px);
+  color: white;
+}
 
