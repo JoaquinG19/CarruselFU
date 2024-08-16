@@ -3684,7 +3684,7 @@ width: 380px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Asegura que las imágenes se centren en la fila */
-    gap: 10px; /* Añade un pequeño espacio entre las imágenes */
+    gap: 11px; /* Añade un pequeño espacio entre las imágenes */
   }
 
   .marconuestros {
