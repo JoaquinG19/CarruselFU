@@ -1,0 +1,3342 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+   border: 1px solid red; 
+}
+
+.animar {
+	animation: aparecer 1.3s;
+}
+
+i {
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: "Gotham Black", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align: center;
+}
+
+.navbar-mainbg {
+  background-color: #34b4e4;
+  padding: 0px;
+}
+
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+  margin-right: 5%;
+  margin: 1%;
+}
+
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+
+#navbarSupportedContent ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 7px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  text-align: center;
+}
+
+#navbarSupportedContent > ul > li.active > a {
+  color: #34b4e4;
+  background-color: #fff;
+  transition: all 0.7s;
+  border-radius: 2em;
+}
+
+#navbarSupportedContent a:not(:only-child):after {
+  content: "\f105";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+#navbarSupportedContent .active > a:not(:only-child):after {
+  transform: rotate(90deg);
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 7px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #ffffff52;
+  transform: scale(0.8);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.margin-top {
+  margin-top: 55px;
+}
+
+.hori-selector {
+  display: inline-block;
+  position: absolute;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -20px;
+}
+
+.hori-selector .right {
+  right: -25px;
+}
+
+.hori-selector .left {
+  left: -25px;
+}
+
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #34b4e4;
+}
+
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-custom {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+
+  .hori-selector .right {
+    bottom: -25px;
+  }
+
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
+/* END CSS NAVBAR */
+
+h5 {
+  display: inline-block;
+  padding: 10px;
+  background: #b9121b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-inner .carousel-item .imgportada {
+  height: 100%;
+}
+
+/* fundacion UNIFRANZ
+.logofundacioncirculo {
+  margin-top: -25px;
+  width: 230px;
+  height: 230px;
+}
+
+.fundanewsparraffo {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.hazloxellos {
+  width: 200px;
+  height: 200px;
+}
+
+.menu {
+  color: #fff;
+  margin: 5px;
+}
+
+.quienessomos {
+  font-size: 50px;
+} */
+
+.valores_institucionales {
+  position: relative;
+}
+
+.logosfundacion {
+  width: 200px;
+  height: 200px;
+}
+
+.e {
+  margin-right: px;
+  margin: 25px;
+  margin-left: 25px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.h4font {
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.titulobanner-1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(0px);
+  }
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.curved-div {
+  position: relative;
+  background: #133361;
+  color: #fff;
+  text-align: center;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.border_social {
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.text-fin {
+  color: #fff !important;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  body::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #35b4e7;
+    border-radius: 10px;
+  }
+}
+
+.logo_clinica {
+  width: 200px;
+  margin-left: -60px;
+  margin-top: 25%;
+}
+
+.logo_unifranz {
+  width: 170px;
+  margin-left: 50px;
+}
+
+@media (min-width: 200px) and (max-width: 740px) {
+  .logo_unifranz {
+    margin-left: 0px;
+  }
+
+  .logo_clinica {
+    margin-left: 0px;
+  }
+}
+
+/* CÓDIGO PARA LOGOS DE LA FUNDACIÓN*/
+
+#flex-container {
+  display: flex;
+}
+
+#flex-container div {
+  width: 300px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+  line-height: 150px;
+  margin: 10px;
+}
+
+.imglogosfundacion {
+  width: 170px;
+}
+
+.imglogosfundaciontriquitrueque {
+  width: 170px;
+}
+
+.imglogosfundacionunifranz {
+  width: 170px;
+}
+
+.imglogosfundacionclinica {
+  width: 170px;
+}
+
+.flex-container {
+  list-style-type: none;
+  margin: 40px auto;
+  padding: 0;
+  background-color: midnightblue;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 180px;
+  line-height: 200px;
+  font-size: 10px;
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+.imgdonacion {
+  width: 130px;
+}
+
+/* @media (max-width: 800px) {
+
+	#flex-container {
+		flex-direction: column;
+	}
+
+	.imglogosfundacion {
+		width: 120px;
+	}
+
+	.imglogosfundaciontriquitrueque {
+		width: 120px;
+	}
+
+	.imglogosfundacionunifranz {
+		width: 120px;
+	}
+
+	.imglogosfundacionclinica {
+		width: 40px;
+	}
+
+	.imglogosfundacionsanasana {
+		width: 100px;
+	}
+} */
+
+.icons {
+  flex-grow: 2;
+  margin-top: 20%;
+}
+
+.name,
+.icons,
+.time {
+  color: #000000;
+}
+
+.name {
+  flex-grow: 1;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border-bottom: 3px solid #ffffff;
+}
+
+.time {
+  flex-grow: 1;
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.mapa {
+  border: 0;
+  height: 450px;
+  width: 100%;
+}
+
+.font-titulodonacion {
+  font-size: 18px;
+}
+
+/*------------- ESTILO CARRUSEL MEMORIAS INSTITUCIONALES -----------*/
+
+.titulomemorias {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.single-box {
+  position: relative;
+  bottom: 30px;
+  align-content: center;
+}
+
+.img-area span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: -20px 20px 20px -20px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.img-area {
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-left: 20px;
+
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(0.1px);
+  border-radius: 10px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  /* grid-template-columns: auto auto auto; */
+}
+
+.img-area img {
+  width: 100%;
+}
+
+.carousel-indicators {
+  top: auto;
+  bottom: 25px;
+}
+
+/* .carousel-indicators li {
+	position: absolute;
+	background: #000;
+	border-radius: 50%;
+	width: 15px;
+	height: 1px;
+}
+
+.carousel-indicators .active {
+	background: #FFF;
+} */
+
+.cabecera-memorias {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* @media (max-width: 768px) {
+	.cabecera-memorias ()
+} */
+
+@media screen and (max-width: 640px) {
+  .titulomemorias {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .img-area {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+  }
+
+  .button {
+    margin-left: auto;
+  }
+
+  .cabecera-memorias {
+    margin-left: auto;
+  }
+}
+
+/*************/
+/* START BOTON NUESTROS PROYECTOS */
+.wrap {
+  height: 10%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  min-width: 150px;
+  min-height: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #02655b;
+  background: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  left: 10px;
+  margin-top: 40px;
+}
+
+/*button::before {
+  	content: '';
+	border-radius: 1000px;
+	min-width: calc(180px + 12px);
+	min-height: calc(25px + 12px);
+	border: 6px solid #00FFCB;
+	box-shadow: 0 0 60px rgba(0,255,203,.64);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: all .3s ease-in-out 0s;
+}*/
+
+.button-container .button {
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+.button:hover,
+.button:focus {
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+button:hover::after,
+button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+/* END BOTON NUESTROS PROYECTOS */
+
+/* START BOTON MEMORIAS INSTITUCIONALES */
+.wrap {
+  height: 10%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_m {
+  display: inline-block;
+  min-width: 150px;
+  min-height: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #02655b;
+  background: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  left: 70px;
+  margin-top: 40px;
+}
+
+/*button_m::before {
+  	content: '';
+	border-radius: 1000px;
+	min-width: calc(180px + 12px);
+	min-height: calc(25px + 12px);
+	border: 6px solid #00FFCB;
+	box-shadow: 0 0 60px rgba(0,255,203,.64);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: all .3s ease-in-out 0s;
+}*/
+
+.button_m:hover,
+.button_m:focus {
+  color: #168d81;
+  transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+button:hover::after,
+button:focus::after {
+  animation: none;
+  display: none;
+}
+
+.button-container .button_m {
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 20px;
+}
+
+.button_m {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.button_m:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button_m:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.button_m:hover {
+  color: #fff;
+}
+
+.button_m:hover:before {
+  width: 100%;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+/* END BOTON MEMORIAS INSTITUCIONALES */
+
+@media screen and (min-width: 640px) and (max-width: 1279px) {
+  .titulomemorias {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .img-area {
+    height: 300px;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .button {
+    margin-left: 16px;
+  }
+
+  .cabecera-memorias {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 4000px) {
+  .titulomemorias {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .img-area {
+    height: 400px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .button {
+    margin-left: 85px;
+  }
+
+  .cabecera-memorias {
+    text-align: center;
+  }
+}
+
+/********** VISUALIZADOR PDF ***************/
+.title {
+  text-align: center;
+  padding: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.pdfview {
+  margin: auto;
+  top: 30%;
+  display: block;
+  width: 550px;
+  height: 470px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3 {
+  font-size: 15px;
+  margin-left: 25px;
+}
+
+.modales {
+  background-color: #34b5e412;
+}
+
+/*adasdas */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 9999;
+}
+
+.popup {
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#crane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: flyAndFade 4s ease-in-out forwards;
+  opacity: 1;
+}
+
+/* Animación de vuelo */
+@keyframes flyAndFade {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  80% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+/* Animación de regreso */
+#crane-return {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: returnAndAppear 4s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes returnAndAppear {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.reboteIn_abajo {
+  font-family: Arial;
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+}
+
+/* Asignamos las animaciones */
+.reboteIn_abajo {
+  animation: reboteIn_abajo 1s 2;
+}
+
+/* Creamos la animación ReboteIn desde Abajo (con keyframes) */
+@keyframes reboteIn_abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100vw);
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(10px);
+  }
+}
+
+.carousel-control-prev {
+  margin-left: 20px;
+}
+
+.carousel-control-next {
+  margin-right: 20px;
+}
+
+.titulosiguienosen .logoredessociales {
+  display: inline-block;
+  /* Para que los elementos se muestren en línea */
+  margin: 10px;
+  /* Margen entre los elementos */
+}
+
+.titulosiguienosen .logoredessociales:hover {
+  transform: scale(1.1);
+}
+
+/* -------------TAMAÑO PARA LAPTOPS Y PC----------------------- */
+
+@media screen and (min-width: 1280px) {
+
+  .tamañocarrusel{
+    height: 920px; width: 100%;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_ubicacion {
+    color: #fff;
+    font-size: 20px;
+    float: left;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_contenedores {
+    color: #fff;
+    font-size: 27px;
+    float: right;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .icono_ubi {
+    width: 50px;
+    float: right;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec {
+    margin-top: 12px;
+  }
+
+  .contenido_accionrec .img_tapas-plastico-vidrio {
+    width: 300px;
+  }
+
+  .contenido_accionrec .img_carton {
+    width: 300px;
+    float: left;
+  }
+
+  .contenido_accionrec .img_papel {
+    width: 300px;
+    float: right;
+  }
+
+  .nuestrassedes .img_marcos {
+    width: 500px;
+    height: 500px;
+  }
+
+  .contenedor_huellitas .img_huellitas {
+    width: 120px;
+    margin-left: 40px;
+  }
+
+  .font_sedes_hazloxellos {
+    color: #8074b4;
+  }
+
+  .font_hazloxellos {
+    color: #fff;
+    font-size: 25px;
+    margin-left: -1px;
+  }
+
+  .flip-container {
+    background-color: transparent;
+    width: 270px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 40px;
+  }
+
+  .flip-container:hover .card {
+    transform: rotateY(180deg);
+    align-items: center;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front {
+    background-color: #30243c;
+    color: #fff;
+    border-radius: 40px;
+  }
+
+  .back {
+    background-color: #858585;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+  }
+
+  .contenedor_actividades_accionrec .img_cam_accionrec {
+    width: 650px;
+  }
+
+  .contenedor_actividades_accionrec .img_accionrec {
+    width: 350px;
+    margin-left: 40px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_cam_hazloxellos {
+    width: 650px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_hazloxellos {
+    width: 200px;
+    margin-left: 40px;
+  }
+
+  .img_vision {
+    position: relative;
+    left: 1000px;
+    animation-name: mover-izquierda;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes mover-izquierda {
+    from {
+      left: 1000px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .img_mision {
+    position: relative;
+    right: 1000px;
+    /* Valor alto para que quede fuera del contenedor */
+    animation-name: mover-derecha;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes mover-derecha {
+    from {
+      right: 1000px;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  .img_mision {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+  }
+
+  .img_vision {
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+    float: right;
+  }
+
+  .div_img_vision {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    top: -20px;
+    right: -15px;
+  }
+
+  .div_img_mision {
+    width: 100%;
+    position: relative;
+    z-index: 998;
+    top: 0px;
+    left: -15px;
+  }
+  .parrafo_mision {
+    display: flex;
+    justify-content: center;
+    margin-top: -17px;
+    margin-left: 80px;
+    line-height: 35px;
+    font-weight: 100;
+    font-family: "Gotham Black", sans-serif;
+  }
+
+  .parrafo_vision {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 40px;
+    line-height: 35px;
+    font-weight: 100;
+    font-family: "Gotham Black", sans-serif;
+  }
+
+  .section_valores {
+    background-color: #ec6e6b;
+    margin-bottom: -470px;
+  }
+
+  .a {
+    width: 200px;
+    height: 150px;
+  }
+
+  .logotriquitrueque_unifranz {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logosanasana {
+    float: left;
+    width: 110px;
+    height: 150px;
+  }
+
+  .logoredessociales {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .FUNDA {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 10%;
+  }
+
+  .NEWS {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: -22px;
+  }
+
+  .avatar {
+    width: 230px;
+    height: 230px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .fundanews {
+    margin-left: 75px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  .grullaceleste {
+    margin-top: -68px;
+    width: 380px;
+    height: 380px;
+    margin-left: 50px;
+  }
+
+  .porquienestrabajamos {
+    margin-top: 30px;
+    color: #ffff;
+    font-size: 70px;
+    line-height: 60px;
+    margin-left: -90px;
+  }
+
+  .div_titulo_porquienestrabajamos {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .parrafoporquienestrabajamos {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: -90px;
+  }
+
+  .tituloactividades {
+    color: #ffff;
+    font-size: 60px;
+  }
+
+  .titulodonaciones {
+    color: #000000;
+    font-size: 60px;
+  }
+
+  .parrafoactividades {
+    text-align: center;
+    margin: 10% auto;
+    color: #fff;
+  }
+
+  .imgactividades {
+    float: left;
+  }
+
+  .tituloVALORES {
+    color: #ffff;
+    font-size: 100px;
+    margin-left: 10%;
+  }
+
+  .tituloINSTITUCIONALES {
+    color: #ffff;
+    font-size: 50px;
+    margin-top: -45px;
+    margin-left: 10%;
+  }
+
+  .titulovaaloresinstitucionales {
+    margin-bottom: 190px;
+    margin-top: 190px;
+  }
+
+  .img_institucional_1 {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -40px;
+  }
+
+  .img_institucional_2 {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -50px;
+  }
+
+  .img_institucional_3 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: -40px;
+  }
+
+  .img_institucional_4 {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 300px;
+  }
+
+  .img_institucional_5 {
+    position: absolute;
+    left: 340px;
+    top: 270px;
+  }
+
+  .tituloquienessomos {
+    margin-top: 15%;
+    margin-left: -80px;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .parrafoquienessomos {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: -40px;
+  }
+
+  .imgquienessomos {
+    width: 500px;
+    height: auto;
+    margin-left: -50px;
+  }
+
+  .imgmapabolivia {
+    width: 50%;
+    height: 500px;
+  }
+
+  .SANTACRUZ {
+    position: relative;
+    margin-top: -400px;
+    margin-left: 829px;
+    color: #fff;
+  }
+
+  .SANTACRUZ:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+  @keyframes swing {
+    15% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    65% {
+      transform: translateX(-3px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .COCHABAMBA:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+
+  .ELALTO:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+
+  .LAPAZ:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+
+  .COCHABAMBA {
+    position: relative;
+    margin-top: 140px;
+    margin-left: 829px;
+    color: #fff;
+  }
+
+  .ELALTO {
+    position: relative;
+    margin-top: -185px;
+    margin-left: -720px;
+    color: #fff;
+  }
+
+  .LAPAZ {
+    position: relative;
+    margin-top: -335px;
+    margin-left: -720px;
+    color: #fff;
+  }
+
+  .nuestrassedes {
+    position: relative;
+    margin-bottom: 280px;
+  }
+
+  .wrapperr {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .cardss {
+    width: 140px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 6px;
+    margin: 50px;
+  }
+
+  .imglogosfundacionsanasana {
+    width: 150px;
+  }
+
+  .titulosiguienosen {
+    font-size: 40px;
+  }
+
+  .container4 {
+    position: relative;
+    height: 300px; /* ajusta la altura según sea necesario */
+  }
+
+  .marco4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    top: 60%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+  }
+
+  .marco3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    transform: translate(16%, -25%);
+  }
+
+  .marco2 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: auto;
+    bottom: 0%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+  }
+
+  .marco1 {
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    top: 0;
+    right: auto;
+    transform: translate(-16%, -25%);
+  }
+
+  /*--------COLUMNAS DE DONACIONES-------*/
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 180px;
+    margin: 20px;
+  }
+
+  .parrafomapa {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .titulosmapa {
+    font-size: 40px;
+  }
+
+  .img_Valores {
+    width: 500px;
+    height: 1000px;
+    margin-top: -274px;
+    margin-left: 50px;
+  }
+
+  /*--------NUESTROS PROYECTOS-------*/
+  .marconuestros {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+  }
+
+  .carousel-item.tamañocarruselnuestro {
+    /* No uses flex si prefieres evitar que el contenido se desplace con cambios en el zoom */
+    display: block; /* Cambia a block para que no dependa de flex */
+    min-height: 100vh;
+    position: relative; /* Añade position relative para controlar el contenido */
+  }
+  
+  .container-nuestrosp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content-wrapper {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
+  }
+  
+  .proyectos-titulo {
+    color: #fff;
+    text-align: left;
+    transform: skew(-10deg);
+    font-size: 10rem; /* Tamaño de la fuente ajustable según necesidad */
+    font-weight: bold;
+    margin: 0; /* Eliminar margen por defecto */
+  }
+  
+  .bg-right-column {
+    background-color: #cecece;
+    min-height: 100vh; /* Para asegurar que ocupa el 100% de la vista */
+  }
+  
+  .proyectos-ima {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .proyecto-img {
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    object-fit: contain;
+  }
+  
+  .proyecto-img:hover {
+    transform: scale(1.5);
+  }
+
+  .img-proyecto {
+    max-height: 100px; /* Ajusta esta altura según lo necesario */
+    max-width: 150px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-naccionrec, .img-ndoname {
+    max-height: 150px; /* Ajusta esta altura según lo necesario */
+    max-width: 150px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-ncausahay{
+    max-height: 75px; /* Ajusta esta altura según lo necesario */
+    max-width: 75px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .img-ntriqui, .img-nchanchito, .img-nhxe {
+    max-height: 100px; /* Ajusta esta altura según lo necesario */
+    max-width: 100px; /* Ajusta este ancho según lo necesario */
+    object-fit: contain; /* Ajusta la imagen para que se adapte al contenedor */
+    margin: 0 10px; /* Añade un margen lateral para espaciado entre imágenes */
+  }
+
+  .col-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  /*--------CAUSA HAY-------*/
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos específicos para los títulos */
+  .que-es-title {
+    background-color: black;
+    font-size: 35px;
+    color: #f3961e; /* Color especificado para ¿QUÉ ES? */
+  }
+  
+  .como-participar-title {
+    background-color: black;
+    font-size: 35px;
+    color: #3da936; /* Color especificado para ¿CÓMO PARTICIPAR? */
+  }
+  
+  .description-text {
+    text-align: justify;
+    font-size: 20px; /* Ajusta el tamaño de letra según sea necesario */
+    color: #fff; /* Color blanco para el texto */
+    font-weight: normal; /* Asegura que el texto no esté en negrita */
+  }
+  
+  .container-principal {
+    padding: 0 15px;
+  }
+  
+  /* Estilos para las imágenes en la primera columna */
+  .img-container {
+    position: relative;
+    width: auto; /* Permite que el contenedor se ajuste al contenido */
+    height: 400px; /* Ajusta la altura según sea necesario */
+    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+  
+  .img-logo {
+    width: 80%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 300px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    bottom: 165px; /* Ajusta la posición vertical del logo */
+    z-index: 1; /* Asegura que el logo esté debajo del caldo */
+  }
+  
+  .img-caldo {
+    width: 100%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 550px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    top: 80px; /* Ajusta la posición vertical del caldo */
+    z-index: 2; /* Asegura que el caldo esté encima del logo */
+  }
+  
+  .logo-causa-hay {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 800px; /* Ajusta el máximo ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    left: 60%;
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave para los cambios de tamaño */
+  }
+  
+  .logo-causa-hay:hover {
+    transform: scale(1.1); /* Agranda la imagen un 10% al pasar el ratón */
+  }
+
+  .marcocausahay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -100%; /* Ajustado para ocupar toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #22aee4; /* Color de fondo */
+    transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
+  }
+
+  .marcocuchara {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 20px;
+    left: auto;
+    top: -20%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    z-index: 2;
+  }
+
+  /*--------HAZLO X ELLOS-------*/
+  .section-title-hxe {
+    font-size: 35px;
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .description-text-hxe {
+    font-size: 15px; /* Ajusta el tamaño del texto */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative; /* Para el uso de posicionamiento absoluto */
+  }
+
+  .description-text-hxe2 {
+    text-align: right; /* Alinea el texto a la derecha */
+    font-size: 25px; /* Ajusta el tamaño de letra según sea necesario */
+    color: #fff; /* Color blanco para el texto */
+    font-weight: normal; /* Asegura que el texto no esté en negrita */
+    margin: 0; /* Elimina márgenes predeterminados si es necesario */
+    padding: 0; /* Elimina padding predeterminado si es necesario */
+  }
+
+  .sub-section-title {
+    text-align: right; /* Alinea el título a la derecha */
+    font-size: 15px; /* Ajusta el tamaño de letra del título si es necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  }
+
+  /* Asegúrate de que el contenedor tenga una posición relativa para que el posicionamiento absoluto funcione */
+  .container-fluid {
+    position: relative;
+  }
+
+  .img-recurso-manual {
+    position: absolute;
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    max-width: 100%; /* Limita el tamaño máximo para que no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    left: 10%; /* Ajusta la posición horizontal para mover la imagen a la izquierda */
+    bottom: 10px; /* Ajusta la posición vertical para pegarla al fondo del contenedor */
+  }
+
+  .hxe-col3{
+    margin-top: 0;
+  }
+
+  .hxe-img{
+    width: 600px;
+  }
+
+  .marco-perro {
+    position: absolute;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    top: 40%; /* Agregamos esta propiedad */
+    transform: translateX(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    transform: translateX(
+      -5%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    z-index: 1;
+  }
+
+  .marcohxe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%);
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: left center; /* Alinea la imagen al lado izquierdo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    z-index: 0;
+  }
+
+  .titulohxe-col3{
+    font-size: 20px;
+  }
+
+  .descriptionhx3-col3{
+    font-size: 35px;
+    color: #fff;
+    text-align: right;
+  }
+
+  /*---------CHANCHITO-----------*/
+  /* chanchito */
+
+  .h1-chanchito {
+    text-align: right;
+    font-family: 'Montserrat Black Italic', sans-serif;
+  }
+
+  .custom-text-chanchito-1 {
+    text-align: right;
+    text-align: justify; /* Justifica el texto */
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 100px;
+  }
+  .custom-text-chanchito-2 {
+    text-align: left;
+    text-align: justify; /* Justifica el texto */
+    font-style: normal;
+    font-size: 16px;
+    margin-right: 110px;
+  }
+
+  .custom-column-chanchito {
+    text-align: right;
+    max-width: 445px;
+    margin-left: 445px;
+  }
+
+  .h1-chanchito-2 {
+    text-align: left;
+    font-family: 'Montserrat Black Italic', sans-serif;
+  }
+
+  .custom-column-chanchito-2 {
+    max-width: 100%;
+  }
+
+  .img-corazon {
+    margin-left: -50px;
+  }
+
+  .custom-column-chanchito{
+    align-content: center;
+    width: 900px;
+    margin-top: -200px;
+  }
+
+  .chanchito-izquierda {
+    width: 320px;
+    height: auto;
+    margin-left: -70px;
+  }
+
+  .chanchito-derecha {
+    width: 480px;
+    height: auto;
+    margin-left: 170px;
+  }
+
+  /*--------TRIQUI TRUEQUE-------*/
+  /* Ajuste de tamaño del carrusel */
+  .img-container-triqui {
+    position: relative;
+    width: auto; /* Permite que el contenedor se ajuste al contenido */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+
+  .marconuestrostriqui {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -35%; /* Cambiado para que ocupe toda la altura vertical */
+    left: auto;
+    width: 8%; /* Ajusta el ancho según sea necesario */
+    background-color: #cecece; /* Color de fondo */
+    transform: translate(16%, -25%);
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+}
+
+/* ----------TAMAÑO PARA CELULAR---------------- */
+@media screen and (max-width: 640px) {
+
+  .marco1{
+    display: none;
+  }
+
+  .marco2{
+    display: none;
+  }
+
+  .marco3{
+    display: none;
+  }
+
+  .marco4{
+    display: none;
+  }
+
+  #navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5%;
+    margin-right: 0%;
+  }
+
+  .marcodehojascelular {
+    display: none;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_ubicacion {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .campaña6{
+    margin-bottom: 55px;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_contenedores {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .icono_ubi {
+    width: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 42%;
+  }
+
+  .contenido_accionrec .img_tapas-plastico-vidrio {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_carton {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_papel {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .font_sedes_hazloxellos {
+    color: #8074b4;
+    font-size: 25px;
+  }
+
+  .nuestrassedes .img_marcos {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contenedor_huellitas .img_huellitas {
+    width: 100px;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .margen_hazloxellos {
+    margin-top: -40px;
+  }
+
+  .espaciado {
+    margin-top: 500px;
+  }
+
+  .contenedor_actividades_accionrec .img_accionrec {
+    width: 70%;
+  }
+
+  .contenedor_actividades_hazloxellos .img_hazloxellos {
+    width: 50%;
+  }
+
+  .font_hazloxellos {
+    color: #fff;
+    font-size: 20px;
+    margin-left: -1px;
+  }
+
+  .contenido_hazloxellos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    /* ajusta este valor para mover el elemento hacia la derecha */
+  }
+
+  .contenido_accionrec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    /* ajusta este valor para mover el elemento hacia la derecha */
+  }
+
+  .flip-container {
+    background-color: transparent;
+    width: 270px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+
+    /* Estilos para centrar el elemento */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 40px;
+  }
+
+  .flip-container:hover .card {
+    transform: rotateY(180deg);
+    align-items: center;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front {
+    background-color: #30243c;
+    color: #fff;
+    border-radius: 40px;
+  }
+
+  .back {
+    background-color: #858585;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+  }
+
+  .img_mision {
+    width: 370px;
+    margin-left: -30px;
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .img_vision {
+    width: 370px;
+    margin-top: 30px;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  .div_img_vision {
+    margin-right: 10px;
+  }
+
+  .div_img_mision {
+    margin-left: -10px;
+  }
+
+  .parrafo_mision {
+    display: flex;
+    justify-content: center;
+  }
+
+  .parrafo_vision {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_institucional_1 {
+    margin-top: -70px;
+  }
+
+  .img_institucional_2 {
+    margin-top: -70px;
+  }
+
+  .img_institucional_3 {
+    margin-top: -70px;
+  }
+
+  .img_institucional_4 {
+    margin-top: -70px;
+  }
+
+  .img_institucional_5 {
+    margin-top: -70px;
+    margin-bottom: -540px;
+  }
+
+  .carousel-inner .carousel-item .imgportada {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    content: url(../images_fundacion/portada/img_celular_portada1.png);
+  }
+
+  .portada1 .portada2 .portada3 {
+    width: 100%;
+    height: 500px;
+  }
+
+  .carousel-inner .carousel-item .imgportada2 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    content: url(../images_fundacion/portada/img_celular_portada2.png);
+  }
+
+  .carousel-inner .carousel-item .imgportada3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    content: url(../images_fundacion/portada/img_celular_portada3.png);
+  }
+
+  .a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logotriquitrueque_unifranz {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logosanasana {
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoredessociales {
+    margin-left: 5px;
+    width: 35px;
+    height: 30px;
+  }
+
+  .FUNDA {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 30%;
+  }
+
+  .NEWS {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-top: -22px;
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    margin-top: 30px;
+  }
+
+  .fundanews {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+  }
+
+  .grullaceleste {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .porquienestrabajamos {
+    color: #ffff;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .parrafoporquienestrabajamos {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .tituloactividades {
+    color: #ffff;
+    font-size: 40px;
+
+    text-align: center;
+  }
+
+  .titulodonaciones {
+    color: #000000;
+    font-size: 40px;
+
+    text-align: center;
+  }
+
+  .parrafoactividades {
+    text-align: center;
+    color: #fff;
+  }
+
+  .tituloVALORES {
+    color: #ffff;
+    font-size: 60px;
+  }
+
+  .tituloINSTITUCIONALES {
+    color: #ffff;
+    font-size: 35px;
+    margin-top: -35px;
+  }
+
+  .titulovaaloresinstitucionales {
+    margin-bottom: -30px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .tituloquienessomos {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  .parrafoquienessomos {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .imgquienessomos {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgmapabolivia {
+    visibility: hidden;
+    display: none;
+  }
+
+  .valores_institucionales {
+    position: relative;
+    margin-bottom: 350px;
+  }
+
+  .tusdonaciones {
+    color: #000000;
+  }
+
+  .imgdonaciones {
+    float: left;
+    width: 200px;
+  }
+
+  .margindonaciones {
+    display: grid;
+    place-content: center;
+    margin-left: 80px;
+  }
+
+  .margindonacionestapas {
+    display: grid;
+    place-content: center;
+    margin-left: 80px;
+  }
+
+  .margindonacionescroquetas {
+    display: grid;
+    place-content: center;
+    margin-left: 100px;
+  }
+
+  .imgdonacionesmedicamentos {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+  }
+
+  .frontmedicamentos {
+    font-size: 15px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .imgportada {
+    height: 800px;
+  }
+
+  .wrapperr {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .cardss {
+    margin: 5%;
+  }
+
+  .imglogosfundacionsanasana {
+    width: 150px;
+    margin-left: 50%;
+  }
+
+  /*--------COLUMNAS DE DONACIONES-------*/
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 150px;
+    margin: 20px;
+  }
+
+  .titulosiguienosen {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .button {
+    display: inline-block;
+    min-width: 150px;
+    min-height: 25px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    left: 5px;
+    margin-top: 40px;
+  }
+
+  .button_m {
+    display: inline-block;
+    min-width: 250px;
+    min-height: 25px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-align: center;
+    left: 65px;
+    margin-top: 40px;
+  }
+
+  /*--------NUESTROS PROYECTOS-------*/
+.marconuestros {
+  display: none; /* Mantiene el elemento oculto si no es necesario en este caso */
+}
+
+.carousel-item.tamañocarruselnuestro {
+  display: block; /* Mantiene el comportamiento de block para evitar problemas de flexbox */
+  min-height: 100vh; /* Asegura que el contenedor ocupe la altura completa del viewport */
+  position: relative;
+}
+
+.container-nuestrosp {
+  position: relative; /* Cambia a relative para que el contenido se ajuste dentro del contenedor */
+  top: auto; /* Elimina el desplazamiento vertical */
+  left: auto;
+  transform: none; /* Elimina el desplazamiento horizontal */
+  margin: 0; /* Ajusta el margen */
+}
+
+.content-wrapper {
+  position: relative;
+  top: auto; /* Elimina el top para evitar el desplazamiento */
+  transform: none; /* Elimina el transform para mantener el contenido dentro de la pantalla */
+  text-align: center; /* Centra el texto */
+  width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  padding: 200px 30px; /* Añade padding para que el contenido no se superponga en dispositivos más pequeños */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total del elemento */
+}
+
+.proyectos-titulo {
+  color: #fff;
+  text-align: center; /* Centra el texto en dispositivos móviles */
+  transform: skew(-10deg); /* Elimina el skew para un diseño más claro en pantallas pequeñas */
+  font-size: 2rem; /* Ajusta el tamaño de la fuente */
+  font-weight: bold;
+  margin: 0; /* Elimina el margen */
+}
+
+.proyectos-ima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+.proyecto-img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: none; /* Elimina el límite de ancho máximo */
+}
+
+.proyecto-img:hover {
+  transform: scale(1); /* Elimina el efecto de escala al pasar el ratón */
+}
+
+}
+
+/*--------------------TABLETS-------------------------------------*/
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+
+  .tamañocarrusel{
+    height: 1080px; width: 100%;
+  }
+
+  .contenido_accionrec .img_carton {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_papel {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_carton {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_papel {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .nuestrassedes .img_marcos {
+    width: 400px;
+    height: 300px;
+  }
+
+  .marco4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    top: 60%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+  }
+
+  .marco3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    transform: translate(16%, -25%);
+  }
+
+  .marco2 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: auto;
+    bottom: 0%; /* Agregamos esta propiedad */
+    transform: translateY(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+  }
+
+  .marco1 {
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    top: 0;
+    right: auto;
+    transform: translate(-16%, -25%);
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_ubicacion {
+    color: #fff;
+    font-size: 20px;
+    float: left;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .leyenda_contenedores {
+    color: #fff;
+    font-size: 22px;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .contenido_ubicacion_actividad_accion_rec .icono_ubi {
+    width: 50px;
+    float: right;
+  }
+
+  .contenido_accionrec .img_carton {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenido_accionrec .img_papel {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_cam_hazloxellos {
+    height: 200px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_hazloxellos {
+    height: 120px;
+  }
+
+  .contenedor_huellitas .img_huellitas {
+    width: 80px;
+    margin-left: -10px;
+  }
+
+  .font_sedes_hazloxellos {
+    font-size: 30px;
+    margin-left: -10px;
+    color: #8074b4;
+  }
+
+  .contenido_hazloxellos .font_hazloxellos {
+    color: #fff;
+    font-size: 16px;
+    margin-left: -10px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_hazloxellos {
+    width: 200px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contenedor_actividades_accionrec .img_cam_accionrec {
+    height: 200px;
+  }
+
+  .contenedor_actividades_accionrec .img_accionrec {
+    height: 110px;
+  }
+
+  #navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5%;
+    margin-right: 0%;
+  }
+
+  .valores_institucionales {
+    position: relative;
+    margin-top: -300px;
+    margin-left: 30%;
+  }
+
+  .img_institucional_1 {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -40px;
+  }
+
+  .img_institucional_2 {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -50px;
+  }
+
+  .img_institucional_3 {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: -10px;
+  }
+
+  .img_institucional_4 {
+    position: absolute;
+
+    margin-top: 110px;
+    margin-left: 370px;
+  }
+
+  .img_institucional_5 {
+    position: absolute;
+    left: 340px;
+    top: 300px;
+  }
+
+  .img_mision {
+    width: 380px;
+    margin-left: -30px;
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .img_vision {
+    width: 380px;
+    margin-top: 40px;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  .div_img_vision {
+    margin-right: 10px;
+    height: auto;
+  }
+
+  .div_img_mision {
+    margin-left: -10px;
+    height: auto;
+  }
+
+  .parrafo_mision {
+    display: flex;
+    justify-content: center;
+  }
+
+  .parrafo_vision {
+    display: flex;
+    justify-content: center;
+  }
+
+  .a {
+    width: 200px;
+    height: 150px;
+  }
+
+  .logotriquitrueque_unifranz {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logosanasana {
+    float: left;
+    width: 110px;
+    height: 150px;
+  }
+
+  .logoredessociales {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .FUNDA {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20%;
+    margin-left: 80px;
+  }
+
+  .NEWS {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: -22px;
+  }
+
+  .avatar {
+    width: 230px;
+    height: 230px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .fundanews {
+    margin-left: 75px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+  }
+
+  .grullaceleste {
+    margin-top: -75px;
+    width: 380px;
+    height: 380px;
+    margin-left: 25%;
+  }
+
+  .porquienestrabajamos {
+    margin-top: 30px;
+    color: #ffff;
+    font-size: 70px;
+  }
+
+  .parrafoporquienestrabajamos {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .tituloactividades {
+    color: #ffff;
+    font-size: 60px;
+  }
+
+  .titulodonaciones {
+    color: #000000;
+    font-size: 60px;
+  }
+
+  .parrafoactividades {
+    text-align: center;
+    margin: 10% auto;
+
+    color: #fff;
+  }
+
+  .imgactividades {
+    float: left;
+  }
+
+  .tituloVALORES {
+    color: #ffff;
+    font-size: 70px;
+    margin-left: 20%;
+  }
+
+  .tituloINSTITUCIONALES {
+    color: #ffff;
+    font-size: 36px;
+    margin-top: -45px;
+    margin-left: 20%;
+  }
+
+  .titulovaaloresinstitucionales {
+    margin-bottom: 300px;
+    margin-top: 60%;
+    margin-left: -30px;
+  }
+
+  .tituloquienessomos {
+    margin-top: 5%;
+    margin-left: 50%;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .parrafoquienessomos {
+    font-size: 20px;
+    color: #fff;
+    text-align: right;
+    margin-top: 15px;
+  }
+
+  .imgquienessomos {
+    width: 500px;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  .imgmapabolivia {
+    width: 50%;
+    height: 500px;
+    margin-top: -80px;
+  }
+
+  .SANTACRUZ {
+    position: relative;
+    margin-top: -350px;
+    margin-left: 509px;
+    color: #fff;
+  }
+
+  .COCHABAMBA {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 519px;
+    color: #fff;
+  }
+
+  .ELALTO {
+    position: relative;
+    margin-top: -110px;
+    margin-left: -460px;
+    color: #fff;
+  }
+
+  .LAPAZ {
+    position: relative;
+    margin-top: -225px;
+    margin-left: -445px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .nuestrassedes {
+    position: relative;
+    margin-bottom: 280px;
+  }
+
+  .wrapperr {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .cardss {
+    width: 140px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 6px;
+    margin: 50px;
+  }
+
+  .imglogosfundacionsanasana {
+    width: 150px;
+  }
+
+  .titulosiguienosen {
+    font-size: 40px;
+  }
+
+  /*--------COLUMNAS DE DONACIONES-------*/
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 180px;
+    margin: 20px;
+  }
+
+  .parrafomapa {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  .titulosmapa {
+    font-size: 20px;
+  }
+
+  .img_Valores {
+    width: 500px;
+    height: 1000px;
+    margin-top: -274px;
+    margin-left: 20%;
+    align-items: center;
+  }
+
+  .font_sedes_hazloxellos {
+    color: #8074b4;
+  }
+
+  .font_hazloxellos {
+    color: #fff;
+    font-size: 25px;
+    margin-left: -1px;
+  }
+
+  .flip-container {
+    background-color: transparent;
+    width: 170px;
+    height: 220px;
+    perspective: 1000px;
+    border-radius: 20px;
+  }
+
+  .card {
+    position: relative;
+    width: 170px;
+    height: 220px;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 40px;
+  }
+
+  .flip-container:hover .card {
+    transform: rotateY(180deg);
+    align-items: center;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front {
+    background-color: #30243c;
+    color: #fff;
+    border-radius: 40px;
+  }
+
+  .back {
+    background-color: #858585;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+    font-size: px;
+  }
+
+  .flip-container .container .texto_p {
+    font-size: 1px;
+  }
+
+  .contenedor_actividades_accionrec .img_cam_accionrec {
+    width: 650px;
+  }
+
+  .contenedor_actividades_accionrec .img_accionrec {
+    width: 350px;
+    margin-left: 40px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_cam_hazloxellos {
+    width: 650px;
+  }
+
+  .contenedor_actividades_hazloxellos .img_hazloxellos {
+    width: 200px;
+    margin-left: 40px;
+  }
+
+  .button {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 25px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    left: 10px;
+  }
+
+  .button_m {
+    display: inline-block;
+    min-width: 150px;
+    min-height: 25px;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 100%
+    );
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 1.5px 1.5px 3px rgb(5, 239, 227);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-align: center;
+    left: 25px;
+    margin-top: 40px;
+  }
+  /*--------NUESTROS PROYECTOS-------*/
+  .carousel-item.tamañocarruselnuestro {
+    display: block; /* Mantiene el comportamiento de block para evitar problemas de flexbox */
+    min-height: 100vh; /* Asegura que el contenedor ocupe la altura completa del viewport */
+    position: relative;
+  }
+  
+  .container-nuestrosp {
+    position: relative; /* Cambia a relative para que el contenido se ajuste dentro del contenedor */
+    top: auto; /* Elimina el desplazamiento vertical */
+    left: auto;
+    transform: none; /* Elimina el desplazamiento horizontal */
+    margin: 0; /* Ajusta el margen */
+  }
+  
+  .content-wrapper {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 30%; /* Elimina el top para evitar el desplazamiento */
+    transform: none; /* Elimina el transform para mantener el contenido dentro de la pantalla */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+    padding: 40px 20px; /* Ajusta el padding para evitar que el contenido toque los bordes de la pantalla */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .proyectos-titulo {
+    color: #fff;
+    text-align: center; /* Centra el texto */
+    transform: skew(-10deg); /* Mantiene el skew para el diseño */
+    font-size: 5rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    margin: 0; /* Elimina el margen */
+  }
+  
+  .proyectos-ima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 20px; /* Ajusta el margen superior */
+  }
+  
+  .proyecto-img {
+    width: 80%; /* Ajusta el ancho de la imagen al 80% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 550px; /* Ajusta el límite de ancho máximo de la imagen */
+  }
+  
+  .proyecto-img:hover {
+    transform: scale(1.2); /* Ajusta el efecto de escala al pasar el ratón */
+  }
+
+}
+
+.imglogosfundaciontriquitrueque:hover {
+  transform: scale(1.1);
+}
+
+.imglogosfundacionunifranz:hover {
+  transform: scale(1.1);
+}
+
+.imglogosfundacionclinica:hover {
+  transform: scale(1.1);
+}
+
+.imglogosfundacionsanasana:hover {
+  transform: scale(1.1);
+}
+
+.imglogosfundacion:hover {
+  transform: scale(1.1);
+}
+
+.img_Valores {
+  animation: slideInRight 0.4s linear;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.grullaceleste {
+  animation: slideInLeft 0.4s linear;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@font-face {
+  font-family: 'Montserrat Black Italic';
+  src: url('/assets/fonts/FontsFree-Net-Montserrat-BlackItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
