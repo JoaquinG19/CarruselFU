@@ -8,7 +8,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-   /* border: 1px solid red;  */
+  /*  border: 1px solid red;  */
 }
 
 .animar {
@@ -2888,6 +2888,15 @@ h3 {
     padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
   }
   
+  .content-wrapper-np {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
+  }
+
   .proyectos-titulo {
     color: #fff;
     text-align: left;
@@ -2964,6 +2973,15 @@ h3 {
     padding: 10px 20px;
     margin-bottom: 20px;
   }
+
+  .content-wrapper-ch {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
+  }
   
   /* Estilos específicos para los títulos */
   .que-es-title {
@@ -2997,7 +3015,9 @@ h3 {
     display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
     justify-content: center; /* Centra las imágenes horizontalmente */
     align-items: center; /* Centra las imágenes verticalmente */
+    margin: 0 auto;
   }
+  
   
   .img-logo {
     width: 80%; /* Ajusta el tamaño del logo según sea necesario */
@@ -3053,22 +3073,20 @@ h3 {
 
   /*--------HAZLO X ELLOS-------*/
   .section-title-hxe {
-    font-size: 35px;
+    font-size: 24px;
     color: #fff; /* Color del texto */
     font-weight: bold;
     font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
     display: block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
   }
   
   .description-text-hxe {
-    font-size: 15px; /* Ajusta el tamaño del texto */
+    font-size: 14px; /* Ajusta el tamaño del texto */
     color: #fff; /* Color del texto */
     text-align: center; /* Alineación centrada del texto */
     line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina padding predeterminado */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
     position: relative; /* Para el uso de posicionamiento absoluto */
   }
@@ -3142,11 +3160,11 @@ h3 {
   }
 
   .titulohxe-col3{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .descriptionhx3-col3{
-    font-size: 33px;
+    font-size: 25px;
     color: #fff;
     text-align: right;
   }
@@ -3266,6 +3284,76 @@ h3 {
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
+
+  .triqui-img {
+    margin-top: 80px;
+    margin-left: 130px;
+  }
+
+  .h1-triqui {
+    font-family: 'Montserrat Black Italic', sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .p-triqui {
+    text-align: center;
+    color: white;
+    padding: 0 42px;
+  }
+
+  .container-triqui {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-triqui-1{
+    margin-top: 100px;
+    margin-right: 320px;
+    margin-left: -150px;
+  }
+
+  .text-triqui-2{
+    margin-top: 110px;
+    margin-right: 100px;
+    margin-left: 66px;
+  }
+
+  .cont-triqui{
+    position: relative;
+  }
+
+  .triqui-1 {
+    position: absolute;
+    top: -500px;
+    right: 10%;
+    margin-top: 220px;
+    margin-right: 100px;
+    margin-left: -10px;
+  }
+
+  .triqui-2 {
+    position: absolute;
+    top: -70px;
+    right: 10%;
+    margin-top: 220px;
+    margin-right: -75px;
+    margin-left: 165px;
+  }
+
+  .triqui-titulo{
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    text-align: center;
+  }
+
+  .triqui-desc{
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+  }
 }
 
 /*--------ACCIÓN REC-------*/
@@ -3273,7 +3361,6 @@ h3 {
   font-weight: bold;
   font-family: 'Montserrat Black Italic', sans-serif;
 }
-
 
 .custom-text {
   text-align: justify; /* Justifica el texto */
@@ -3437,45 +3524,10 @@ h3 {
   transform: translate(16%, -25%); /* Eliminado el translate para mantener el contenedor pegado a la derecha */
 }
 
-/*--------TRIQUI TRUEQUE-------*/
-.triqui-img {
-  margin-top: 80px;
-  margin-left: 130px;
-}
 
-.h1-triqui {
-  font-family: 'Montserrat Black Italic', sans-serif;
-  color: white;
-  text-align: center;
-}
-
-.p-triqui {
-  text-align: center;
-  color: white;
-  padding: 0 42px;
-}
-
-.container-triqui {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-triqui-1{
-  margin-top: 100px;
-  margin-right: 320px;
-  margin-left: -150px;
-}
-
-.text-triqui-2{
-  margin-top: 110px;
-  margin-right: 100px;
-  margin-left: 66px;
-}
 
 /*--------SANA SANA-------*/
 .imgSanaSana{
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3534,17 +3586,13 @@ width: 380px;
     margin: 0; /* Ajusta el margen */
   }
 
-  .content-wrapper {
+  .content-wrapper-np {
     position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
-    top: 30%; /* Elimina el top para evitar el desplazamiento */
-    transform: none; /* Elimina el transform para mantener el contenido dentro de la pantalla */
-    text-align: center; /* Centra el texto */
-    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
-    padding: 40px 20px; /* Ajusta el padding para evitar que el contenido toque los bordes de la pantalla */
-    display: flex; /* Utiliza flexbox para centrar el contenido */
-    flex-direction: column; /* Apila los elementos en una columna */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
   }
 
   .proyectos-titulo {
@@ -3558,17 +3606,17 @@ width: 380px;
   }
 
   .proyecto-img {
-      width: 60%; /* Reduce el tamaño de las imágenes */
-      max-width: 600px; /* Ajusta el tamaño máximo para tablets */
-      margin: 10px auto; /* Añade un margen superior e inferior */
+    width: 60%; /* Reduce el tamaño de las imágenes */
+    max-width: 600px; /* Ajusta el tamaño máximo para tablets */
+    margin: 10px auto; /* Añade un margen superior e inferior */
   }
 
   .col-auto {
-      margin-bottom: 15px; /* Añade espacio entre las imágenes */
+    margin-bottom: 15px; /* Añade espacio entre las imágenes */
   }
 
   .marconuestros {
-      display: none;
+    display: none;
   }
   
   .proyecto-img {
@@ -3620,7 +3668,207 @@ width: 380px;
     justify-content: center;
     align-items: center
   }
+
+
+  /*-------CAUSA HAY--------*/
+  .fondo-hxe {
+    background-size: contain; /* Ajusta el tamaño para que se vea mejor en tablets */
+    background-position: top center; /* Alinea la imagen al centro superior */
+    height: auto; /* Ajusta la altura automáticamente para evitar que se corte la imagen */
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Mantiene la fuente */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .content-wrapper-ch {
+    position: relative; /* Cambia a relative para evitar que el contenido se salga de la pantalla */
+    top: 50%; 
+    transform: translateY(-50%); /* Solo centra verticalmente sin desplazar horizontalmente */
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes de la pantalla */
+  }
+
+  .que-es-title {
+    background-color: black;
+    font-size: 30px; /* Ajuste para tablets */
+    color: #f3961e; /* Mantiene el color */
+  }
+
+  .como-participar-title {
+    background-color: black;
+    font-size: 30px; /* Ajuste para tablets */
+    color: #3da936; /* Mantiene el color */
+  }
+
+  .description-text {
+    text-align: justify;
+    font-size: 18px; /* Ajuste para tablets */
+    color: #fff; /* Mantiene el color */
+    font-weight: normal;
+  }
+
+  .img-container {
+    position: relative;
+    height: 350px; /* Ajusta la altura para tablets */
+    width: auto; /* Permite que el contenedor se ajuste al contenido */
+    display: flex; /* Usa flexbox para permitir que las imágenes se alineen dentro del contenedor */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin: 0 auto;
+  }
+
+  .img-logo {
+    width: 80%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 300px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    bottom: 100px; /* Ajusta la posición vertical del logo */
+    z-index: 1; /* Asegura que el logo esté debajo del caldo */
+  }
+
+  .img-caldo {
+    width: 100%; /* Ajusta el tamaño del logo según sea necesario */
+    max-width: 550px; /* Ajusta el tamaño máximo del logo */
+    position: absolute;
+    top: 100px; /* Ajusta la posición vertical del caldo */
+    z-index: 2; /* Asegura que el caldo esté encima del logo */
+  }
+
+  .marcocausahay {
+    width: 6%; /* Ajuste para tablets */
+    transform: translate(12%, -20%);
+  }
+
+  .marcocuchara {
+    top: -15%;
+    transform: translateY(15%);
+  }
+
+  /*--------HAZLO X ELLOS-------*/
+
+  .carousel-item-hxe {
+    background-position: 60% 20% !important;
+  }
   
+  .section-title-hxe {
+    font-size: 20px; /* Ajusta el tamaño del título para tablets */
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+  }
+  
+  .description-text-hxe {
+    font-size: 12px; /* Ajusta el tamaño del texto para tablets */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative; /* Para el uso de posicionamiento absoluto */
+  }
+
+  .titulohxe-col3 {
+    font-size: 16px; /* Ajusta el tamaño del texto de la columna 3 para tablets */
+    text-align: right;
+  }
+
+  .descriptionhx3-col3 {
+    font-size: 20px; /* Ajusta el tamaño del texto de la columna 3 para tablets */
+    color: #fff;
+    text-align: right;
+  }
+
+  .marco-perro {
+    height: 50%; /* Reduce el tamaño del marco para tablets */
+    top: 50%; /* Ajusta la posición */
+    transform: translateX(
+      20%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    transform: translateX(
+      35%
+    ); /* Ajustamos el valor para centrarlo verticalmente */
+    position: absolute;
+  }
+
+  .marcohxe {
+    width: 12%; /* Ajusta el ancho del marco lateral */
+    bottom: -20%; /* Ajusta la altura para que se vea correctamente en tablets */
+  }
+
+  /*--------TRIQUI TRUEQUE-------*/
+  .carousel-item-tt {
+    background-position: 80% 20% !important;
+  }
+
+  /* Ajustes del contenedor del texto */
+  .cont-triqui {
+    width: 100%; /* Asegura que el texto también ocupe el 100% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en tablets */
+  }
+
+  .cont-triqui-img{
+    width: 100%; /* Asegura que el texto también ocupe el 100% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en tablets */
+    margin-top: 100px;
+    margin-left: 180px;
+  }
+
+  .triqui-1 {
+    position: absolute;
+    top: -700px;
+    right: 10%;
+    margin-top: 220px;
+    margin-right: 370px;
+    margin-left: -550px;
+  }
+
+  .triqui-2 {
+    position: absolute;
+    top: -70px;
+    right: 10%;
+    margin-top: 300px;
+    margin-right: 100px;
+    margin-left: -330px;
+  }
+
+  /* Ajuste de tamaño de títulos y texto */
+  .triqui-titulo {
+    font-size: 30px; /* Ajuste del tamaño del título para tablets */
+    margin-bottom: 15px;
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    text-align: center;
+  }
+
+  .triqui-desc {
+    font-size: 22px; /* Ajustamos el tamaño del texto descriptivo para tablets */
+    line-height: 1.5; /* Mejoramos la legibilidad del texto */
+    margin-bottom: 20px;
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+  }
+
+  /* Ajuste del marco lateral */
+  .marconuestrostriqui {
+    display: none;
+  }
 }
 
 /* ----------TAMAÑO PARA CELULAR---------------- */
@@ -3631,7 +3879,7 @@ width: 380px;
     height: 920px; width: 100%;
   }
   
-  .content-wrapper {
+  .content-wrapper-np {
     padding: 50px; /* Reducir el padding en móviles */
   }
 
@@ -3639,7 +3887,7 @@ width: 380px;
     color: #fff;
     text-align: center; /* Centra el texto */
     transform: skew(-10deg); /* Mantiene el skew para el diseño */
-    font-size: 3rem; /* Ajusta el tamaño de la fuente */
+    font-size: 2.3rem; /* Ajusta el tamaño de la fuente */
     font-weight: bold;
     margin: 0; /* Elimina el margen */
     text-align: center; /* Centra los títulos en lugar de alinearlos a la izquierda */
@@ -3688,6 +3936,202 @@ width: 380px;
   }
 
   .marconuestros {
+    display: none;
+  }
+
+  /*-------CAUSA HAY--------*/
+
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+  }
+
+  .content-wrapper-ch {
+    position: relative;
+    top: 45%; 
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  .que-es-title {
+    background-color: black;
+    font-size: 26px;
+    color: #f3961e;
+  }
+
+  .como-participar-title {
+    background-color: black;
+    font-size: 26px;
+    color: #3da936;
+  }
+
+  .description-text {
+    text-align: justify;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+  }
+
+  .img-container {
+    position: relative;
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .img-logo {
+    width: 70%;
+    max-width: 150px;
+    bottom: 80px;
+    z-index: 1;
+  }
+
+  .img-caldo {
+    width: 90%;
+    max-width: 150px;
+    top: 50px;
+    z-index: 2;
+  }
+
+  .marcocausahay {
+    width: 4%;
+    transform: translate(8%, -10%);
+  }
+
+  .marcocuchara {
+    top: -10%;
+    transform: translateY(10%);
+  }
+
+  /*--------HAZLO X ELLOS-------*/
+
+  .carousel-item-hxe .container-hxe {
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Ajustamos las imágenes para móviles */
+  .carousel-item-hxe img {
+    max-width: 80%; /* Ajustamos el tamaño máximo de las imágenes para que no se desborden */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px; /* Agrega margen para separar los elementos */
+  }
+
+  /* Ajustes de texto en pantallas móviles */
+  .section-title-hxe {
+    font-size: 20px; /* Reducimos el tamaño de la fuente para pantallas más pequeñas */
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    padding: 5px 10px; /* Ajustamos los márgenes y padding */
+  }
+
+  .description-text-hxe {
+    font-size: 12px; /* Ajustamos el tamaño de la fuente del texto descriptivo */
+    line-height: 1.4; /* Ajustamos la altura de línea para mejor legibilidad */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    padding: 0 10px;
+  }
+
+  .descriptionhx3-col3 {
+    font-size: 18px; /* Ajustamos el tamaño del texto */
+    text-align: center; /* Centramos el texto en pantallas pequeñas */
+    padding: 0 10px;
+    color: #fff;
+  }
+
+  .titulohxe-col3 {
+    font-size: 16px; /* Ajuste del título para móviles */
+    text-align: center; /* Centramos los títulos */
+    margin-bottom: 10px;
+  }
+
+  /* Ajuste de la imagen de fondo en móvil */
+  .marco-perro {
+    transform: none; /* Quitamos las transformaciones complejas */
+    right: 0%;
+    bottom: -2%;
+    position: absolute;
+  }
+
+  .marcohxe {
+    bottom: -20%; /* Ajuste del fondo */
+    transform: none; /* Quitamos las transformaciones complejas */
+    width: 20%; /* Ajustamos el ancho en móviles */
+    right: 5%; /* Ajustamos la posición en móviles */
+  }
+
+  /*--------TRIQUI TRUEQUE-------*/
+  .carousel-item-tt {
+    background-position: 73% 20% !important;
+  }
+
+  .triqui-img {
+    width: 80%; /* Aumentamos el tamaño de la imagen al 80% del ancho del contenedor */
+    height: auto; /* Mantenemos la proporción de la imagen */
+    margin-bottom: 20px; /* Añadimos un margen inferior para separar la imagen del texto */
+  }
+
+  .cont-triqui-img{
+    width: 100%; /* Asegura que el texto también ocupe el 100% del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en tablets */
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .triqui-1 {
+    position: absolute;
+    top: -700px;
+    right: 10%;
+    margin-top: 300px;
+    margin-right: 60px;
+    margin-left: -280px;
+  }
+
+  .triqui-2 {
+    position: absolute;
+    top: -70px;
+    right: 10%;
+    margin-top: 300px;
+    margin-right: -10px;
+    margin-left: -230px;
+  }
+
+  /* Ajuste de tamaño de títulos y texto */
+  .triqui-titulo {
+    font-size: 24px; /* Ajuste del tamaño del título para tablets */
+    margin-bottom: 15px;
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
+    display: block;
+    text-align: center;
+  }
+
+  .triqui-desc {
+    font-size: 15px; /* Ajustamos el tamaño del texto descriptivo para tablets */
+    line-height: 1.5; /* Mejoramos la legibilidad del texto */
+    margin-bottom: 20px;
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+  }
+
+  /* Ajuste del marco lateral */
+  .marconuestrostriqui {
     display: none;
   }
 }

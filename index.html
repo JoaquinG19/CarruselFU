@@ -39,7 +39,7 @@
                 <!-- Start Nuestros Proyectos -->
                 <div class="carousel-item active container-principal tamañocarru" style="background-color: #1FB4E9;">
                     <br>
-                    <div class="content-wrapper">
+                    <div class="content-wrapper-np">
                         <center>
                             <div class="container">
                                 <div class="row">
@@ -151,7 +151,7 @@
                 <!-- End Accion Rec -->
                 <!-- Start Causa Hay -->
                 <div class="carousel-item tamañocarru" style="background-color: #355EA9;">
-                    <div class="content-wrapper">
+                    <div class="content-wrapper-ch">
                         <div class="container">
                             <div class="row align-items-center">
                                 <!-- Columna 1: Imágenes -->
@@ -246,15 +246,15 @@
                 </div>
                 <!-- End Doname -->
                 <!-- Start Hazlo x Ellos -->
-                <div class="carousel-item tamañocarru" style="background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/HXE FONDO.svg'); background-size: cover;  background-position: center; width: 100%; height: 100%;">
-                    <div class="container d-flex align-items-center h-100">
+                <div class="carousel-item tamañocarru carousel-item-hxe" style="background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/HXE FONDO.svg'); background-size: cover;  background-position: center; width: 100%; height: 100%;">
+                    <div class="container container-hxe d-flex align-items-center h-100">
                         <!-- Columna 1: Imagen centrada -->
-                        <div class="col-md-3 d-flex justify-content-center align-items-center">
-                            <img src="assets/images_fundacion/seccion_nuestros_proyecto/HXE LOGO.svg" alt="HXE Logo" class="img-fluid">
+                        <div class="col-md-3 col-md-3-hxe d-flex justify-content-center align-items-center">
+                            <img src="assets/images_fundacion/seccion_nuestros_proyecto/HXE LOGO.svg" alt="HXE Logo">
                         </div>
 
                         <!-- Columna 2: Texto centrado -->
-                        <div class="col-md-5 d-flex justify-content-center align-items-center text-center">
+                        <div class="col-md-5 col-md-5-hxe d-flex justify-content-center align-items-center text-center">
                             <div>
                                 <h2 class="section-title-hxe">¿QUÉ ES?</h2>
                                 <p class="description-text-hxe">Este proyecto se dedica a mejorar la
@@ -278,7 +278,7 @@
                             </div>
                         </div>
                         <!-- Columna 3: Dos filas, la primera con texto y la segunda con una imagen -->
-                        <div class="col-md-6 h-100">
+                        <div class="col-md-4 col-md-4-hxe h-100">
                             <div class="hxe-col3 d-flex flex-column justify-content-between align-items-end">
                                 <h3 class="titulohxe-col3 ms-auto text-end">A través de este proyecto recolectamos:</h3>
                                 <p class="descriptionhx3-col3 ms-auto text-end">
@@ -289,7 +289,6 @@
                         
                     </div>
                     <div class="container d-flex align-items-center">
-                        
                     </div>
                     <div class="marco-perro">
                         <img src="assets/images_fundacion/seccion_nuestros_proyecto/HXE RECURSO.svg" class="img_marcos2">
@@ -371,50 +370,32 @@
                 </div>
                 <!-- End Proyecto Chanchito -->
                 <!-- Start Triqui Trueque -->
-                <div
-                class="carousel-item container-principal tamañocarru"
-                style="
-                background-color: #cecece;
-                background-image: url('assets/images_fundacion/portada/Fondo Triqui.svg');
-                background-size: cover;
-                background-position: center;
-                "
-                >
-                    <div class="container-triqui" style="margin-top: 80px;">
-                    <div class="row justify-content-center align-items-center">
-                        <!-- Columna para la imagen -->
-                        <div class="col-md-7 custom-triqui-img">
-                        <img
-                            src="assets/images_fundacion/portada/TRIQUI TRUEQUE LOGO.svg"
-                            class="triqui-img"
-                            style="width: 560px; height: auto"
-                            alt="Logo Triqui Trueque"
-                        />
+                <div class="carousel-item tamañocarru carousel-item-tt" style="background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/TRIQUI TRUEQUE FONDO.svg'); background-size: cover;  background-position: center;">
+                    <div class="container d-flex align-items-center justify-content-between h-100">
+                        <!-- Imagen del lado izquierdo -->
+                        <div class="col-6 cont-triqui-img d-flex justify-content-center align-items-center">
+                            <img src="assets/images_fundacion/seccion_nuestros_proyecto/TRIQUI TRUEQUE LOGO.svg" alt="Triqui Trueque Logo" class="triqui-img img-fluid">
                         </div>
-                        <!-- Columna para los textos -->
-                        <div class="col-md-5 custom-triqui-text">
-                        <div class="text-triqui-1">
-                            <h1 class="h1-triqui">¿QUÉ ES?</h1>
-                            <p class="p-triqui">
-                            En este proyecto se realiza la recolección de donaciones a
-                            cambio de recuerdos de la marca ¨Sana Sana¨. Todos los
-                            fondos recolectados van dirigidos a las ayudas sociales
-                            que realiza la ¨Fundación Unifranz¨, como la implantables,
-                            financiamiento de resonancias magnéticas, entre otras
-                            causas de tipo médico.
-                            </p>
+                        <!-- Contenido del lado derecho -->
+                        <div class="col-md-6 cont-triqui">
+                            <div class="row hxe-col3 d-flex flex-column justify-content-between triqui-1">
+                                <h2 class="fw-bold triqui-titulo">¿QUÉ ES?</h2>
+                                <p class="triqui-desc">
+                                    En este proyecto realiza la recolección de donaciones a cambio de recuerdos de la marca "Sana Sana", 
+                                    todos los fondos recolectados van dirigidos a las ayudas sociales que realiza la "Fundación Unifranz" 
+                                    como la compra de catéteres implantables, financiamiento de resonancias magnéticas, entre otras causas 
+                                    de tipo médico.
+                                </p>
+                            </div>
+
+                            <div class="row hxe-col3 d-flex flex-column justify-content-between triqui-2">
+                                <h2 class="fw-bold triqui-titulo">¿CÓMO SER PARTE?</h2>
+                                <p class="triqui-desc">
+                                    Para ser parte de este proyecto puedes realizar tu donación de 60 Bs para apoyar a quienes más lo 
+                                    necesitan y así conservar la variedad de productos "Sana Sana".
+                                </p>
+                            </div>
                         </div>
-                        <div class="text-triqui-2">
-                            <h1 class="h1-triqui">¿CÓMO</h1>
-                            <h1 class="h1-triqui">SER PARTE?</h1>
-                            <p class="p-triqui">
-                            Para ser parte de este proyecto puedes realizar tu
-                            donación de 60 Bs para apoyar a quienes más lo necesitan y
-                            así conserver la variedad de productos ¨Sana Sana¨.
-                            </p>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                     <div class="marconuestrostriqui" style="background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/SANA SANA FONDO.svg');">
                     </div>
