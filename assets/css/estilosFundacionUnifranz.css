@@ -3696,13 +3696,13 @@ width: 380px;
 
   .que-es-title {
     background-color: black;
-    font-size: 30px; /* Ajuste para tablets */
+    font-size: 28px; /* Ajuste para tablets */
     color: #f3961e; /* Mantiene el color */
   }
 
   .como-participar-title {
     background-color: black;
-    font-size: 30px; /* Ajuste para tablets */
+    font-size: 28px; /* Ajuste para tablets */
     color: #3da936; /* Mantiene el color */
   }
 
@@ -3756,13 +3756,15 @@ width: 380px;
   }
   
   .section-title-hxe {
-    font-size: 20px; /* Ajusta el tamaño del título para tablets */
+    font-size: 26px; /* Ajusta el tamaño del título para tablets */
     color: #fff; /* Color del texto */
     font-weight: bold;
     font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
     display: block;
     padding: 5px 15px;
     margin-bottom: 15px;
+    text-align: justify;
+    text-align: center; /* Alineación centrada del texto */
   }
   
   .description-text-hxe {
@@ -3772,11 +3774,13 @@ width: 380px;
     line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
     position: relative; /* Para el uso de posicionamiento absoluto */
+    text-align: justify;
   }
 
   .titulohxe-col3 {
     font-size: 16px; /* Ajusta el tamaño del texto de la columna 3 para tablets */
     text-align: right;
+    padding-top: 30%;
   }
 
   .descriptionhx3-col3 {
@@ -3832,7 +3836,7 @@ width: 380px;
     position: absolute;
     top: -700px;
     right: 10%;
-    margin-top: 220px;
+    margin-top: 280px;
     margin-right: 370px;
     margin-left: -550px;
   }
@@ -3841,14 +3845,14 @@ width: 380px;
     position: absolute;
     top: -70px;
     right: 10%;
-    margin-top: 300px;
+    margin-top: 340px;
     margin-right: 100px;
     margin-left: -330px;
   }
 
   /* Ajuste de tamaño de títulos y texto */
   .triqui-titulo {
-    font-size: 30px; /* Ajuste del tamaño del título para tablets */
+    font-size: 28px; /* Ajuste del tamaño del título para tablets */
     margin-bottom: 15px;
     color: #fff; /* Color del texto */
     font-weight: bold;
@@ -3858,7 +3862,7 @@ width: 380px;
   }
 
   .triqui-desc {
-    font-size: 22px; /* Ajustamos el tamaño del texto descriptivo para tablets */
+    font-size: 18px; /* Ajustamos el tamaño del texto descriptivo para tablets */
     line-height: 1.5; /* Mejoramos la legibilidad del texto */
     margin-bottom: 20px;
     color: #fff; /* Color del texto */
@@ -3942,7 +3946,7 @@ width: 380px;
   /*-------CAUSA HAY--------*/
 
   .section-title {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     font-family: 'Montserrat Black Italic', sans-serif;
     padding: 8px 16px;
@@ -3959,19 +3963,19 @@ width: 380px;
 
   .que-es-title {
     background-color: black;
-    font-size: 26px;
+    font-size: 24px;
     color: #f3961e;
   }
 
   .como-participar-title {
     background-color: black;
-    font-size: 26px;
+    font-size: 24px;
     color: #3da936;
   }
 
   .description-text {
     text-align: justify;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     font-weight: normal;
   }
@@ -4020,14 +4024,15 @@ width: 380px;
 
   /* Ajustamos las imágenes para móviles */
   .carousel-item-hxe img {
-    max-width: 80%; /* Ajustamos el tamaño máximo de las imágenes para que no se desborden */
+    max-width: 60%; /* Ajustamos el tamaño máximo de las imágenes para que no se desborden */
     height: auto; /* Mantiene la proporción */
-    margin-bottom: 20px; /* Agrega margen para separar los elementos */
+    margin-bottom: 10px; /* Agrega margen para separar los elementos */
+    padding: 20px;
   }
 
   /* Ajustes de texto en pantallas móviles */
   .section-title-hxe {
-    font-size: 20px; /* Reducimos el tamaño de la fuente para pantallas más pequeñas */
+    font-size: 24px; /* Reducimos el tamaño de la fuente para pantallas más pequeñas */
     color: #fff; /* Color del texto */
     font-weight: bold;
     font-family: 'Montserrat Black Italic', sans-serif; /* Aplica la fuente Montserrat */
@@ -4036,7 +4041,7 @@ width: 380px;
   }
 
   .description-text-hxe {
-    font-size: 12px; /* Ajustamos el tamaño de la fuente del texto descriptivo */
+    font-size: 14px; /* Ajustamos el tamaño de la fuente del texto descriptivo */
     line-height: 1.4; /* Ajustamos la altura de línea para mejor legibilidad */
     color: #fff; /* Color del texto */
     text-align: center; /* Alineación centrada del texto */
@@ -4058,9 +4063,8 @@ width: 380px;
 
   /* Ajuste de la imagen de fondo en móvil */
   .marco-perro {
-    transform: none; /* Quitamos las transformaciones complejas */
-    right: 0%;
-    bottom: -2%;
+    right: -10%;
+    bottom: -4%;
     position: absolute;
   }
 
@@ -4123,7 +4127,7 @@ width: 380px;
   }
 
   .triqui-desc {
-    font-size: 15px; /* Ajustamos el tamaño del texto descriptivo para tablets */
+    font-size: 14px; /* Ajustamos el tamaño del texto descriptivo para tablets */
     line-height: 1.5; /* Mejoramos la legibilidad del texto */
     margin-bottom: 20px;
     color: #fff; /* Color del texto */
