@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ $title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+    <link rel="shortcut icon" href="assets/img/fundaico_azul.ico" />
+    <link rel="stylesheet" href="assets/css/estilosFundacionUnifranz.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/gotham');
+    </style>
+</head>
+
+<body>
+    <!-- Start Barra Opciones -->
+    <div class="header">
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+            <img class="navbar-brand logo-cel"src="assets/images_fundacion/logos-redes/Logos-UNIFRANZ.svg"
+                style="width: 400px; height: auto; margin-left: 50px;">
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ route('fundacionunifranz.index') }}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('proyectos_programas.index') }}">Programas y proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('voluntariado.index') }}">Voluntariado</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Sana Sana</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Barra Opciones -->
+    <!-- Start Carrusel Imágenes -->
+    <div class="margin-top"></div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active portada1">
+                <img src="assets/images_fundacion/portada/Portada-1-1.png" class="img-fluid imgportada">
+            </div>
+            <div class="carousel-item portada2">
+                <img src="assets/images_fundacion/portada/Portada-2-1.png" class="img-fluid imgportada2">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    </div>
+    <!-- End Carrusel Imágenes -->
+    <!-- Start Quiénes Somos -->
+    <section class="w3l-bottom-grids-6" id="why" style="background-color: #34b4e4;">
+        <div class="container py-lg-0 py-md-4">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <div class="col-lg-6">
+                    <br><br>
+                    <img class="animate__animated animate__fadeInLeft imgquienessomos reboteIn_abajo"
+                        src="assets/images_fundacion/seccion_quienes_somos/grulla_QuienesSomos.svg" />
+                </div>
+                <div class="col-lg-6 mb-lg-0 mb-md-5 mb-4">
+                    <div class="border-style">
+                        <div class=" d-flex ">
+                            <span class="spanbanner-1 wow animate__animated  animate__fadeInUp">
+                                <h1 class="tituloquienessomos" style="color: #fff; font-size: 70px">QUIÉNES SOMOS</h1>
+
+                                <p class="parrafoquienessomos">
+                                    Somos una FUNDACIÓN dedicada al desarrollo e implementación de programas, proyectos
+                                    en las áreas de salud, educación e investigación, que ejecutan acciones relacionadas
+                                    en
+                                    dichos ámbitos en beneficio de todos los habitantes del Estado Plurinacional de
+                                    Bolivia.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Quiénes Somos -->
+    <!-- Start Misión Visión -->
+    <section class="home-banner-mv">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 " style="background-color: #ffac34;">
+                    <center>
+                        <div class="container-fluid" style="margin-bottom: 50px;">
+                            <div class="row">
+                                <div class="div_img_mision">
+                                    <img src="assets/images_fundacion/seccion_mision_vision/mision.svg" alt=""
+                                        class="img_mision slideInRight">
+                                </div>
+                                <div class="col align-items-center mt-4">
+                                    <p style="font-size: 28px; color: #fff;" class="parrafo_mision">
+                                        Generar acciones creativas para <br>el desarrollo humano.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-md-6 " style="background-color: #a7cd50;">
+                    <center>
+                        <div class="container-fluid" style="margin-bottom: 50px;">
+                            <div class="row">
+                                <div class="div_img_vision">
+                                    <img src="assets/images_fundacion/seccion_mision_vision/vision.svg" alt=""
+                                        class="img_vision img-fluid animated-img">
+                                </div>
+                                <div class="col align-items-center mt-4 ">
+                                    <p style="font-size: 24px; color: #fff;" class="parrafo_vision animated-img">
+                                        Consolidar a la Fundación Unifranz <br> como eje central de una red de
+                                        colaboradores <br> en responsabilidad social.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Misión Visión -->
+    <!-- Start Valores Institucionales -->
+    <section class="home-banner-mv">
+        <div class="container-fluid section_valores">
+            <div class="row align-items-start">
+                <div class="col-lg-6 valores-center">
+                    <img src="assets/images_fundacion/seccion_valores_institucionales/Valores.svg" alt=""
+                        class="img_Valores">
+                </div>
+                <div class="col-md-6">
+                    <center>
+                        <div class="valores_institucionales">
+                            <div class="img_institucional_1">
+                                <center>
+                                    <img src="assets/images_fundacion/seccion_valores_institucionales/solidaridad.svg"
+                                        style="width: 250px; height: 250px;">
+                                    <p style="color: #fff; font-size: 20px; margin-top: -90px; margin-left: 0px;">
+                                        Nos apoyamos mutuamente.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="img_institucional_2">
+                                <center>
+                                    <img src="assets/images_fundacion/seccion_valores_institucionales/liderazgo.svg"
+                                        style="width: 250px; height: 250px;">
+                                    <p style="color: #fff; font-size: 20px; margin-top: -90px; margin-left: 0px;">
+                                        Solucionamos problemas <br> de manera creativa.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="img_institucional_3">
+                                <center>
+                                    <img src="assets/images_fundacion/seccion_valores_institucionales/responsabilidad.svg"
+                                        style="width: 250px; height: 250px;">
+                                    <p style="color: #fff; font-size: 20px; margin-top: -90px; margin-left: px;">
+                                        Asumimos las consecuencias que <br> conlleva nuestro decidir y accionar.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="img_institucional_4">
+                                <center>
+                                    <img src="assets/images_fundacion/seccion_valores_institucionales/transparencia.svg"
+                                        style="width: 250px; height: 250px;">
+                                    <p style="color: #fff; font-size: 20px; margin-top: -90px; margin-left: px;">
+                                        Comunicamos todo lo necesario en el momento oportuno.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="img_institucional_5">
+                                <center>
+                                    <img src="assets/images_fundacion/seccion_valores_institucionales/honestidad.svg"
+                                        style="width: 250px; height: 250px;">
+                                    <p style="color: #fff; font-size: 20px; margin-top: -90px; margin-left: px;">
+                                        Comunicamos siempre la verdad.
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Valores Institucionales -->
+    <!-- Start Por Quiénes Trabajamos -->
+    <section class="w3l-bottom-grids-6 section_trabajamos" id="why">
+        <div class="container">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <div class="col-lg-8 mb-lg-0 mb-md-5 mb-4">
+                    <div class="border-style">
+                        <div class="div_titulo_porquienestrabajamos">
+                            <h1 class="mb-4 porquienestrabajamos">POR QUIÉNES TRABAJAMOS</h1>
+                        </div>
+                        <p class="parrafoporquienestrabajamos">
+                            La FUNDACIÓN UNIFRANZ trabaja con personas de escasos recursos, con una situación económica
+                            adversa por problemas de salud entre otros. Por otro lado trabajamos con diferentes
+                            instituciones y empresas a nivel nacional e internacional que estan interesadas en el
+                            desarrollo local a favor de todos
+                            aquellos que así lo necesiten.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 animate__animated animate__fadeInRight mt-5">
+                    <img src="assets/images_fundacion/seccion_por_quienes_trabajamos/img_por_quienes_trabajamos.svg"
+                        alt="" class="grullaceleste" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Por Quiénes Trabajamos -->
+    <!-- Start Funda News -->
+    <section class="home-banner-mv" style="background-color: #1FB4E9; ">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-4 col-md-2">
+                <center>
+                    <div class="avatar up" style="width: 150px;">
+                        <a href="https://www.facebook.com/FundacionUnifranz" target="_blank">
+                            <img src="assets/images_fundacion/logos-redes/facebook-blanco.svg" class="hover-image1"/>
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <center>
+                    <div class="avatar down" style="width: 150px;">
+                        <a href="https://www.instagram.com/fundacionunifranz?" target="_blank">
+                            <img src="assets/images_fundacion/logos-redes/Instagram-blanco.svg" class="hover-image2"/>
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <center>
+                    <div class="avatar up" style="width: 150px;">
+                        <a href="https://bo.linkedin.com/company/fundacionunifranz" target="_blank">
+                            <img src="assets/images_fundacion/logos-redes/linkedIn-blanco.svg" class="hover-image3"/>
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <center>
+                    <div class="avatar down" style="width: 150px;">
+                        <a href="https://www.tiktok.com/@fundacionunifranz" target="_blank">
+                            <img src="assets/images_fundacion/logos-redes/tiktok-blanco.svg" class="hover-image4"/>
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <center>
+                    <div class="avatar up upstatic" style="width: 150px;">
+                        <a href="https://www.youtube.com/@fundacionunifranz1529" target="_blank">
+                            <img src="assets/images_fundacion/logos-redes/youtube-blanco.svg" class="hover-image5"/>
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>        
+    </section>
+    <!-- End Funda News -->
+    <!-- Start Nuestros Proyectos -->
+    <section class="w3l-bottom-grids-6 d-none" id="why" style="background-color: #20b4c4;">
+        <div class="container">
+            <center>
+                <div class="row">
+                    <div class="col align-items-center mt-4">
+                        <h1 class="title-big mb-4 titulodonaciones" style="color: #fff;">NUESTROS PROYECTOS </h1>
+                    </div>
+                </div>
+            </center>
+            <div class="row">
+                <!-- Start Hazlo x Ellos -->
+                <div class="col-sm-6 col-md-3 mx-auto mb-4">
+                    <div class="flip-container">
+                        <div class="card">
+                            <div class="front">
+                                <img src="assets/images_fundacion/seccion_actividades/hxe.png"
+                                    style="width: 70%; height: 50%;" alt="Hazloxellos logo">
+                            </div>
+                            <div class="back" style="background-color: #8074b4;">
+                                <div class="container">
+                                    <p class="texto_p" style="font-size: 14px;">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/img hazloxellos.png"
+                                            style="width: 55%; height: 100%;" alt="Causahay logo">
+                                        <br><br>
+                                        Por el bienestar de los animales en
+                                        los albergues, realizamos donación
+                                        de alimento, ropa e insumos de
+                                        limpieza, además que junto a
+                                        nuestro voluntariado promovemos
+                                        actividades de concientización
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button-container">
+                        <a type="button" data-toggle="modal" data-target="#modalhazloxellos" class="button">Ver
+                            más</a>
+                    </div>
+                </div>
+                <!-- End Hazlo x Ellos -->
+                <!-- Start Accion Rec -->
+                <div class="col-sm-6 col-md-3 mx-auto mb-4">
+                    <div class="flip-container">
+                        <div class="card">
+                            <div class="front" style="background-color: #b8cc3c;">
+                                <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo accion rec.svg"
+                                    style="width: 70%; height: 50%;" alt="Accion Rec logo">
+                            </div>
+                            <div class="back" style="background-color: #b8cc3c;">
+                                <div class="container">
+                                    <p style="font-size: 14px;">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/img  accion rec.png"
+                                            style="width: 55%; height: 100%;" alt="Causahay logo">
+                                        <br><br>
+                                        Grabamos nuestra huella en el
+                                        planeta mediante nuestro
+                                        voluntariado, a través de distintas
+                                        acciones en favor del medio
+                                        ambiente. ¡Forma parte de nuestra
+                                        red de colaboradores en RSE!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button-container">
+                        <a type="button" data-toggle="modal" data-target="#modalaccionrec" class="button">Ver
+                            más</a>
+                    </div>
+                </div>
+                <!-- End Accion Rec -->
+                <!-- Start Causa Hay -->
+                <div class="col-sm-6 col-md-3 mx-auto mb-4">
+                    <div class="flip-container">
+                        <div class="card">
+                            <div class="front" style="background-color: #8074b4;">
+                                <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo causahay.svg"
+                                    style="width: 70%; height: 50%;" alt="Causahay logo">
+                            </div>
+                            <div class="back" style="background-color: #409c74;">
+                                <div class="container">
+                                    <p style="font-size: 14px;">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/img causa hay.png"
+                                            style="width: 55%; height: 100%;" alt="Causahay logo">
+                                        <br><br>
+                                        Llegamos a comunidades
+                                        vulnerables para brindarles un plato
+                                        de comida con la colaboración de
+                                        nuestro voluntariado y nuestra red
+                                        de colaboradores en RSE ¡Únete!.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button-container">
+                        <a type="button" data-toggle="modal" data-target="#modalcausahay" class="button">Ver
+                            más</a>
+                    </div>
+                </div>
+                <!-- End Causa Hay -->
+                <!-- Start Dóname -->
+                <div class="col-sm-6 col-md-3 mx-auto mb-4">
+                    <div class="flip-container">
+                        <div class="card">
+                            <div class="front" style="background-color: #08acfc;">
+                                <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo doname.svg"
+                                    style="width: 70%; height: 50%;" alt="Doname logo">
+                            </div>
+                            <div class="back" style="background-color: #e0746c;">
+                                <div class="container">
+                                    <p style="font-size: 12px;">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/img doname.png"
+                                            style="width: 55%; height: 100%;" alt="Causahay logo">
+                                        <br><br>
+                                        Fomentamos el consumo
+                                        responsable mediante la recolección
+                                        de medicamentos, ropa, víveres, y
+                                        juguetes antes de ser desechados,
+                                        dándoles una segunda vida
+                                        mediante la donación a instituciones
+                                        y personas vulnerables.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button-container">
+                        <a type="button" data-toggle="modal" data-target="#modaldoname" class="button">Ver más</a>
+                    </div>
+                </div>
+                <!-- End Dóname -->
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- End Nuestros Proyectos -->
+
+    {{-- Politicas --}}
+    <section class="w3l-bottom-grids-6" id="">
+        <div class="container mb-3">
+            <center>
+                <div class="row">
+                    <div class="col align-items-center">
+                        <div class="titlePoliticasUnifranz">
+                            <h1 class="title-big titulodonaciones mt-3" style="">POLITICAS </h1>
+                            <img src="assets/images_fundacion/politicas/logo-unifranz.svg" alt="unifranz"
+                                class="img-fluid logounifranzpoliticas">
+
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <div class="cardPoliticas">
+
+                <div class="deslizable energia">
+
+                    <img src="assets/images_fundacion/politicas/energia-blanco.svg">
+                    <img src="assets/images_fundacion/politicas/energia-color.svg">
+                    <span> <b>Unifranz</b> está implementando un Sistema de Gestión Energética (SGE) para promover el
+                        desarrollo sostenible a través de la eficiencia energética en sus campus. Esta política refleja
+                        nuestro compromiso con la sostenibilidad, alineando nuestras actividades con la misión de formar
+                        un capital humano competitivo y la visión de ser un referente de excelencia.</span>
+                </div>
+
+
+                <div class="deslizable reciclaje">
+
+                    <img src="assets/images_fundacion/politicas/reciclaje-blanco.svg">
+                    <img src="assets/images_fundacion/politicas/reciclaje-color.svg">
+                    <span>La <b>Universidad Unifranz</b>, a través de su fundación comprometida con la sostenibilidad y
+                        el cuidado del medio ambiente, establece la Política Universitaria de Reciclaje y Gestión de
+                        Residuos denominada: <b>"Acción Rec"</b> . Esta política tiene como objetivo formalizar y
+                        sistematizar las prácticas de reciclaje y gestión de residuos dentro de nuestra comunidad
+                        educativa, promoviendo la conciencia ambiental y la responsabilidad en el manejo de
+                        recursos.</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Politicas -->
+
+
+
+    <!-- Start Campañas Vigentes -->
+
+    <section class="w3l-main-slider position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner tamañocarru">
+                <!-- Start Nuestros Proyectos -->
+                <div class="carousel-item active container-principal tamañocarru" style="background-color: #1fb4e9">
+                    <br />
+                    <div class="content-wrapper-np">
+                        <center>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-img-logo justify-content-center">
+                                      <img class="proyecto-logo-u" src="assets/images_fundacion/logos-redes/Logos-UNIFRANZ.svg" alt="Logo Unifranz">
+                                    </div>  
+                                </div>
+                                <div class="row">
+                                    <div class="col align-items-center mt-4">
+                                        <h1 class="proyectos-titulo">NUESTROS</h1>
+                                        <h1 class="proyectos-titulo">PROYECTOS</h1>
+                                    </div>
+                                </div>
+                                <div class="row my-3 centreado-imagenes">
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="1">
+                                            <img class="proyecto-img img-naccionrec"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/nuestro-accion-rec.svg"
+                                                alt="Proyecto 1" />
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="2">
+                                            <img class="proyecto-img img-ncausahay"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/nuestro-causa-hay.svg"
+                                                alt="Proyecto 2" />
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="3">
+                                            <img class="proyecto-img img-ndoname"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/nuestro-doname.svg"
+                                                alt="Proyecto 3" data-bs-target="#carouselExample"
+                                                data-bs-slide-to="3" />
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="4">
+                                            <img class="proyecto-img img-nhxe"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/nuestro-hxe.svg"
+                                                alt="Proyecto 4" data-bs-target="#carouselExample"
+                                                data-bs-slide-to="4" />
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="5">
+                                            <img class="proyecto-img img-nchanchito"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/logo-proyecto-chanchito.svg"
+                                                alt="Proyecto 6" data-bs-target="#carouselExample"
+                                                data-bs-slide-to="6" />
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" data-target="#carouselExampleIndicators" data-slide-to="6">
+                                            <img class="proyecto-img img-ntriqui"
+                                                src="assets/images_fundacion/seccion_nuestros_proyecto/nuestro-triqui.svg"
+                                                alt="Proyecto 5" data-bs-target="#carouselExample"
+                                                data-bs-slide-to="5" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                        <div class="marconuestros"></div>
+                    </div>
+                </div>
+                <!-- End Nuestros Proyectos -->
+                <!-- Start Accion Rec -->
+                <div class="carousel-item container-principal tamañocarru"
+                    style="
+                 background-color: #cecece;
+                 background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/fondo_pag2.svg');
+                 background-size: cover;
+                 background-position: center;
+               ">
+                    <div class="content-wrapper">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="custom-column-img image-container">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo-accion-rec.svg"
+                                        alt="Descripción de la imagen" class="rotated-image"
+                                        style="width: 500px; height: auto" />
+                                </div>
+
+                                <div class="col-md-6 custom-column-1">
+                                    <h1 class="h1-accion-rec">¿QUÉ ES?</h1>
+                                    <p class="custom-text">
+                                        Este proyecto promueve y educa sobre actividades
+                                        especificas de reciclaje en nuestra comunidad educativa a
+                                        través de nuestro equipo de voluntariado. Buscando que
+                                        mediante las acciones individuales y grupales logremos
+                                        modificar nuestra conducta ahaciendonos conscientes del
+                                        cuidado de los recursos, su uso responsable y también
+                                        fortaleciendo el trabajo en favor del medio ambiente de
+                                        instituciones locales, que adoptan nuestras prácticas y de
+                                        otras que requieren de los suministros que acopiamos para
+                                        dar un segundo uso a este material, así, es como grabamos
+                                        nuestra huella en el planeta de una manera consciente e
+                                        influyente.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6 custom-column-2">
+                                    <p>A través de este proyecto recolectamos:</p>
+                                    <h2 style="color: white" class="h2-accion-rec">
+                                        Aceite - Papel - Cartón - Plástico - Vidrio - Tapitas -
+                                        Aluminio
+                                    </h2>
+                                    <br />
+                                    <br />
+                                    <h1 class="h1-accion-rec">¿CÓMO PARTICIPAR?</h1>
+                                    <p class="custom-text">
+                                        Desde la donación del voluntariado recolectamos tapitas,
+                                        botellas plásticas, papel, carton, aceite usado, vidrio,
+                                        alumnio... etc y sumamos empresas que donan estos
+                                        articulos y son parte de nuestros colaboradores en RSE.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marcoaccionrec"></div>
+                    </div>
+                </div>
+                <!-- End Accion Rec -->
+                <!-- Start Causa Hay -->
+                <div class="carousel-item tamañocarru" style="background-color: #355ea9">
+                    <div class="content-wrapper-ch">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <!-- Columna 1: Imágenes -->
+                                <div class="col-md-4 img-container">
+                                    <img class="img-logo"
+                                        src="assets/images_fundacion/seccion_nuestros_proyecto/logo-causahay.svg"
+                                        alt="Logo Causa Hay" />
+                                    <img class="img-caldo"
+                                        src="assets/images_fundacion/seccion_nuestros_proyecto/causa-hay-2.svg"
+                                        alt="Caldo" />
+                                </div>
+                                <!-- Columna 2: Texto -->
+                                <div class="col-md-8">
+                                    <div class="row mb-4">
+                                        <div class="col text-center">
+                                            <h2 class="section-title que-es-title">¿QUÉ ES?</h2>
+                                            <p class="description-text">
+                                                Este proyecto busca potenciar una red de colaboradores
+                                                y aliados estratégicos, que cultivan estas prácticas
+                                                por la comunidad y que permiten que las pequeñas
+                                                acciones se transformen en grandes “Causas” como la
+                                                creación de ollas comunes para poblaciones
+                                                desfavorecidas, mediante la donación de alimentos que
+                                                se traducen en platos de comida caliente para personas
+                                                en situación de calle y también con los excedentes de
+                                                las donaciones, apoyamos en las despensas de distintos
+                                                hogares y albergues.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <h2 class="section-title como-participar-title">
+                                                ¿CÓMO PARTICIPAR?
+                                            </h2>
+                                            <p class="description-text">
+                                                Puedes donar víveres y ser parte del voluntariado para
+                                                repartir con nosotros platos de comida a personas en
+                                                situación de vulnerabilidad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marcocausahay"></div>
+                </div>
+                <!-- End Causa Hay -->
+                <!-- Start Doname -->
+                <div class="carousel-item tamañocarru" style="background-color: #22aee4">
+                    <div class="container-doname">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 custom-column-doname">
+                                <!-- Columna más ancha para el texto -->
+                                <div class="doname-img-cel">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo-doname.svg"
+                                        alt="Descripción de la imagen" style="width: 370px; height: auto" />
+                                </div>
+                                <h1 class="h1-doname" style="color: white">¿QUÉ ES?</h1>
+                                <p style="color: white" class="custom-text">
+                                    Este proyecto busca dar solución a la problemática del
+                                    ¨medio ambiente¨ desarrollando actividades formativas y de
+                                    sensibilización para que nuestra comunidad comprenda la
+                                    importancia del aporte personal y del ejercicio del consumo
+                                    responsable. Todo lo recolectado por nuestra organización
+                                    obtiene una ¨segunda vida¨, las donaciones y su seleccón nos
+                                    pemiten preparer su entrega a distintos albergues, centros
+                                    de acogida, centros médicos, comunidades del área rural y
+                                    otros que requieren esta ayuda.
+                                </p>
+                                <h1 class="h1-doname" style="color: white">
+                                    ¿CÓMO PARTICIPAR?
+                                </h1>
+                                <p style="color: white" class="custom-text">
+                                    Dona y da una segunda vida a las cosas que no utilizas como
+                                    la ropa, juguetes. Alimentos, medicamentos antes de su
+                                    vencimiento, libros y todo lo que no usas… que estos
+                                    artículos pueden ser donados para ayudar a otras personas.
+                                </p>
+                            </div>
+                            <div class="col-md-4 custom-column-doname">
+                                <!-- Columna más estrecha para la imagen -->
+                                <div class="doname-img-tab">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/doname-1.svg"
+                                        alt="Doname" style="width: 400px; height: auto" class="doname-img" />
+                                </div>
+
+                                <div class="text-fondo">
+                                    <p class="text-rojo">
+                                        A través de este proyecto recolectamos:
+                                    </p>
+                                </div>
+                                <div class="letras-abajo">
+                                    <h3 class="h3-doname">MATERIAL ESCOLAR</h3>
+                                    <h3 class="h3-doname">MEDICAMENTOS</h3>
+                                    <h3 class="h3-doname">JUGUETES</h3>
+                                    <h3 class="h3-doname">VÍVERES</h3>
+                                    <h3 class="h3-doname">ROPA</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marcodoname"></div>
+                    </div>
+                </div>
+                <!-- End Doname -->
+                <!-- Start Hazlo x Ellos -->
+                <div class="carousel-item tamañocarru carousel-item-hxe"
+                    style="
+                 background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/hxe-fondo.svg');
+                 background-size: cover;
+                 background-position: center;
+                 width: 100%;
+                 height: 100%;
+               ">
+                    <div class="container container-hxe d-flex align-items-center h-100">
+                        <!-- Columna 1: Imagen centrada -->
+                        <div class="col-md-3 col-md-3-hxe d-flex justify-content-center align-items-center">
+                            <img src="assets/images_fundacion/seccion_nuestros_proyecto/hxe-logo.svg"
+                                alt="HXE Logo" />
+                        </div>
+
+                        <!-- Columna 2: Texto centrado -->
+                        <div
+                            class="col-md-5 col-md-5-hxe d-flex justify-content-center align-items-center text-center">
+                            <div class="rounded-div">
+                                <h2 class="section-title-hxe">¿QUÉ ES?</h2>
+                                <p class="description-text-hxe">Este proyecto se dedica a mejorar la
+                                    calidad de vida de animales en diferentes
+                                    albergues a través de colectas comunitarias
+                                    que proporcionan alimento y que mediante
+                                    campañas de recaudación de fondos realizan
+                                    esterilización para estos centros. Además,
+                                    colaboramos a través de nuestro voluntariado en tareas
+                                    de limpieza, cuidado en los refugios, visitas, paseos y
+                                    juegos con los animales.</p>
+                                <h2 class="section-title-hxe">¿CÓMO PARTICIPAR?</h2>
+                                <p class="description-text-hxe">Ser parte del voluntariado para apoyar en las visitas a
+                                    los peluditos y compartir tiempo de calidad.
+                                    Ayudar en la donación de croquetas, juguetes,
+                                    ropa para perritos y apoyar en la
+                                    esterilización de los perritos de los
+                                    centros que actualmente
+                                    apoyamos.</p>
+
+                            </div>
+                        </div>
+                        <!-- Columna 3: Dos filas, la primera con texto y la segunda con una imagen -->
+                        <div class="col-md-4 col-md-4-hxe h-100">
+                            <div class="hxe-col3 d-flex flex-column justify-content-between align-items-end">
+                                <h3 class="titulohxe-col3 ms-auto text-end">
+                                    A través de este proyecto recolectamos:
+                                </h3>
+                                <p class="descriptionhx3-col3 ms-auto text-end">
+                                    JUGUETES, CROQUETAS, ARROCILLO, CAMITAS, ROPA PARA PERROS,
+                                    FONDOS PARA ESTERILIZACIÓN DE PERROS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-flex align-items-center"></div>
+                    <div class="marco-perro">
+                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/hxe-recurso.svg"
+                            class="img_marcos2" />
+                    </div>
+                    <div class="marcohxe"
+                        style="
+                   background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/chanchito-fondo.svg');
+                 ">
+                    </div>
+                </div>
+                <!-- End Hazlo x Ellos -->
+                <!-- Start Proyecto Chanchito -->
+                <div class="carousel-item tamañocarru"
+                    style="
+                 background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/chanchito-fondo.svg');
+                 background-size: cover;
+                 background-position: center;
+               ">
+                    <div class="container" style="margin-top: 100px">
+                        <!-- Primera Fila con dos Columnas -->
+                        <div class="row chanchito-todo">
+                            <div class="col-md-6">
+                                <div class="img-chancho col-customn-chanchito">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/logo-proyecto-chanchito.svg"
+                                        style="width: 280px; height: auto; margin-top: -60px"
+                                        class="img-chanchito-grande" />
+                                </div>
+                                <br /><br />
+                                <div class="md-6">
+                                    <h1 class="h1-chanchito-2" style="color: white">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/chanchito-recurso_1.svg"
+                                            class="img-corazon" style="width: 35px; height: auto" />
+                                        ¿QUÉ ES?
+                                    </h1>
+                                </div>
+                                <p class="custom-text-chanchito-2" style="color: white">
+                                    El proyecto Chanchito apoya a las actividades de la
+                                    Fundación Unifranz para que mediante la oferta de diversos
+                                    productos se genere esta recaudación de fondos.
+                                </p>
+                                <div class="chanchito-izquierda">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/chanchito.svg"
+                                        class="img-fluid img-chan" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="h1-chanchito" style="color: white">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/chanchito-recurso_1.svg"
+                                        style="width: 35px; height: auto" />
+                                    ¿CÓMO SER PARTE?
+                                </h1>
+                                <p class="custom-text-chanchito-1" style="color: white">
+                                    Ayuda al voluntariado en la recolección de donaciones a
+                                    cambio de productos o sé parte de la red de proveedores de
+                                    productos para recolectar fondos.
+                                </p>
+                                <div class="chanchito-derecha">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/mesa-de-chanchito.svg"
+                                        class="img-fluid img-chan-2" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12 text-center" style="margin-top: -190px">
+                            <div class="chan-abajo">
+                                <p style="color: white">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/chanchito-recurso_1.svg"
+                                        style="width: 35px; height: auto" />
+                                    PROYECTOS QUE APOYA EL CHANCHITO
+                                </p>
+                                <div class="logos-chanchitos">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/logos-chanchito3.svg"
+                                        class="img-portada" style="width: 480px; height: auto" />
+                                </div>
+                            </div>
+                            <!-- Contenido de la columna central -->
+                        </div>
+                    </div>
+                    <div class="marcohxe"
+                        style="
+                   background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/fondo-triqui.svg');
+                 ">
+                    </div>
+                </div>
+                <!-- End Proyecto Chanchito -->
+                <!-- Start Triqui Trueque -->
+                <div class="carousel-item tamañocarru carousel-item-tt"
+                    style="
+                 background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/triqui-trueque-fondo.svg');
+                 background-size: cover;
+                 background-position: center;
+               ">
+                    <div class="container d-flex align-items-center justify-content-between h-100">
+                        <!-- Imagen del lado izquierdo -->
+                        <div class="col-6 cont-triqui-img d-flex justify-content-center align-items-center">
+                            <img src="assets/images_fundacion/seccion_nuestros_proyecto/triqui-trueque-logo.svg"
+                                alt="Triqui Trueque Logo" class="triqui-img img-fluid" />
+                        </div>
+                        <!-- Contenido del lado derecho -->
+                        <div class="col-md-6 cont-triqui">
+                            <div class="row hxe-col3 d-flex flex-column justify-content-between triqui-1">
+                                <h2 class="fw-bold triqui-titulo">¿QUÉ ES?</h2>
+                                <p class="triqui-desc">
+                                    En este proyecto realiza la recolección de donaciones a
+                                    cambio de recuerdos de la marca "Sana Sana", todos los
+                                    fondos recolectados van dirigidos a las ayudas sociales que
+                                    realiza la "Fundación Unifranz" como la compra de catéteres
+                                    implantables, financiamiento de resonancias magnéticas,
+                                    entre otras causas de tipo médico.
+                                </p>
+                            </div>
+
+                            <div class="row hxe-col3 d-flex flex-column justify-content-between triqui-2">
+                                <h2 class="fw-bold triqui-titulo">¿CÓMO SER PARTE?</h2>
+                                <p class="triqui-desc">
+                                    Para ser parte de este proyecto puedes realizar tu donación
+                                    de 60 Bs para apoyar a quienes más lo necesitan y así
+                                    conservar la variedad de productos "Sana Sana".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marconuestrostriqui"
+                        style="
+                   background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/sana-sana-fondo.svg');
+                 ">
+                    </div>
+                </div>
+                <!-- End Triqui Trueque -->
+                <!-- Start Sana Sana -->
+                <div class="carousel-item tamañocarru"
+                    style="
+                 background-image: url('assets/images_fundacion/seccion_nuestros_proyecto/sana-sana-fondo.svg');
+                 background-size: cover;
+                 background-position: center;
+               ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="imgSanaSana">
+                                    <img src="assets/images_fundacion/seccion_nuestros_proyecto/sana-sana-logo.svg" />
+                                </div>
+                                <!-- Espacio para agregar imagen o texto -->
+                            </div>
+                            <div class="col-md-8">
+                                <div class="gloo">
+                                    <!-- Espacio para agregar imagen o texto -->
+                                    <div class="sana-1">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/sana-sana_3.svg"
+                                            style="width: 430px" />
+                                    </div>
+
+                                    <div class="sana-2">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/sana-sana_4.svg"
+                                            style="width: 400px" />
+                                    </div>
+
+                                    <div class="sana-3">
+                                        <img src="assets/images_fundacion/seccion_nuestros_proyecto/sana-sana_2.svg"
+                                            style="width: 330px" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sana Sana -->
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+3"
+                    alt="Third slide" />
+            </div>
+        </div>
+        <div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- End Campañas Vigentes -->
+    <!-- Start Tus Donaciones -->
+    <section class="w3l-main-slider position-relative" style="background-color: #ffffff;">
+        <center>
+            <div class="container">
+                <div class="row">
+                    <div class="col align-items-center mt-4">
+                        <h1 class="title-big mb-4 titulodonaciones">TUS DONACIONES </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="cards">
+                    <h1 class="font-titulodonacion">TAPAS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/tapas.png" class="imgdonacion">
+                    <div class="time">
+                        <h1 class="contador_cantidad" data-cantidad-total="4967.7">0</h1>
+                        Kg.
+                        <div class="fechaDonacion">Desde: 03-11-2017</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">PAPEL</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/PAPEL.png" class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="3303">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 30-09-2021</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">ROPA</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/ROPA.png" class="imgdonacion">
+                    <div class="time">
+                        <h1 class="contador_cantidad" data-cantidad-total="20001">0</h1>
+                        UNIDADES
+                        <div class="fechaDonacion">Desde: 22-05-2015</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">REFRIGERIOS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/REFRIGERIOS.png" class="imgdonacion">
+                    <div class="time">
+                        <h1 class="contador_cantidad" data-cantidad-total="3748">0</h1>
+                        UNIDADES
+                        <div class="fechaDonacion">Desde: 18-03-2016</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">JUGUETES</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/JUGUETES.png" class="imgdonacion">
+                    <div class="time">
+                        <h1 class="contador_cantidad" data-cantidad-total="7333">0</h1>
+                        UNIDADES
+                        <div class="fechaDonacion">Desde: 11-04-2014</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">VIVERES</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/VIVERES.png" class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="8817.7">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 22-05-2015</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">MEDICAMENTOS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/MEDICAMENTOS.png" class="imgdonacion">
+                    <div class="time">
+                        <h1 class="contador_cantidad" data-cantidad-total="10696">0</h1>
+                        UNIDADES
+                        <div class="fechaDonacion">Desde: 14-03-2016</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">CROQUETAS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/CROQUETAS.png" class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="7562">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 16-10-2021</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">PLÁSTICO</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/plastico icono.png"
+                        style="width: 70PX; height: 100px; margin: 20px;" class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="435.20">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 29-12-2021</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">CARTÓN</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/carton icono.png"
+                        style="width: 100px; height: 100px; margin-top: 20px; margin-bottom: 14px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="1037">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 29-12-2021</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">VIDRIO</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/vidrio icono.png"
+                        style="width: 70px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="707.4">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 31-05-2022</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">METAL</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/metal.png"
+                        style="width: 100px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="6.4">0</h1>
+                    Kg.
+                    <div class="fechaDonacion">Desde: 07-09-2023</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">MATERIAL ESCOLAR</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/escolar.png"
+                        style="width: 100px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="2543">0</h1>
+                    UNIDADES
+                    <div class="fechaDonacion">Desde: 08-04-2014</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">ECOLADRILLOS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/ECOLADRILLO.png"
+                        style="width: 100px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="1173">0</h1>
+                    UNIDADES
+                    <div class="fechaDonacion">Desde: 03-07-2023</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">GALLETAS</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/GALLETA.png"
+                        style="width: 100px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="4198">0</h1>
+                    UNIDADES
+                    <div class="fechaDonacion">Desde: 14-04-2023</div>
+                </div>
+                <div class="cards">
+                    <h1 class="font-titulodonacion">PRODUCTOS DE LIMPIEZA</h1>
+                    <img src="assets/images_fundacion/seccion_donaciones/LIMPIEZA.png"
+                        style="width: 100px; height: 100px; margin-top: 30px; margin-bottom: 10px;"
+                        class="imgdonacion">
+                    <h1 class="contador_cantidad" data-cantidad-total="3887">0</h1>
+                    UNIDADES
+                    <div class="fechaDonacion">Desde: 14-03-2027</div>
+                </div>
+            </div>
+        </center>
+        <br>
+    </section>
+    <!-- End Tus Donaciones -->
+    <!-- Start Nuestras Sedes -->
+    <section class="w3l-bottom-grids-6 py-5" id="why" style="background-color: #1cbcc4; color: #fff;">
+        <center>
+            <div class="container py-lg-5 py-md-4">
+                <div class="nuestrassedes ">
+                    <div class="mapaboliviaimg ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col align-items-center mt-4">
+                                    <h1 class="title-big mb-4 titulodonaciones" style="color: #fff">
+                                        NUESTRAS SEDES
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="animate__animated  animate__fadeInUp imgmapabolivia"
+                            src="assets/images_fundacion/seccion_nuestras_sedes/MapaBoliviaSedes.svg">
+                    </div>
+                    <div class="SANTACRUZ" style="z-index: 100;">
+                        <a type="button" data-toggle="modal" data-target="#modalscz">
+                            <h1 class="titulosmapa">SANTA CRUZ</h1>
+                            <p class="parrafomapa">Avenida Busch y Segundo Anillo No. 1113.</p>
+                        </a>
+                    </div>
+                    <div class="COCHABAMBA" style="z-index: 100;">
+                        <a type="button" data-toggle="modal" data-target="#modalcba">
+                            <h1 class="titulosmapa">COCHABAMBA</h1>
+                            <p class="parrafomapa">Calle Portales N° 359 esq. Av. G. Villarroel.</p>
+                        </a>
+                    </div>
+                    <div class="ELALTO">
+                        <a type="button" data-toggle="modal" data-target="#modalelalto">
+                            <h1 class="titulosmapa">EL ALTO</h1>
+                            <p class="parrafomapa">Avenida del Aeropuerto <br> Internacional del El Alto</p>
+                        </a>
+                    </div>
+                    <div class="LAPAZ">
+                        <a type="button" data-toggle="modal" data-target="#exampleModalLong">
+                            <h1 class="titulosmapa">LA PAZ</h1>
+                            <p class="parrafomapa">Calle Campos No 334, Edificio ̈Iturri ̈ <br> entre 20 de Octubre y 6
+                                de Agosto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End Nuestras Sedes -->
+    <!-- Start Memorias Institucionales -->
+    <section class="w3l-bottom-grids-6 py-5" id="why" style="background-color: #168D81; color: #fff;">
+        <center>
+            <div class="container py-lg-5 py-md-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-items-center mt-4">
+                            <h1 class="title-big mb-4 titulomemorias">
+                                MEMORIAS INSTITUCIONALES
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2012</h2>
+                                    <div class="img-area">
+                                        <img type="button" data-toggle="modal" data-target="#modal2012"
+                                            src="assets/images_fundacion/memorias/Portada 2012.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/1j2yRNZH39mVx9I7s-puZciNh0PrYeP8f/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2013</h2>
+                                    <div class="img-area">
+                                        <img type="button_m" data-toggle="modal" data-target="#modal2013"
+                                            src="assets/images_fundacion/memorias/Portada 2013.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/1DIkMiv-FYXuylGKK8Yk2W6A1zdgURmT8/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2014</h2>
+                                    <div class="img-area">
+                                        <img type="button_m" data-toggle="modal" data-target="#modal2014"
+                                            src="assets/images_fundacion/memorias/Portada 2014.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/19AS4mXnqhPH58NXZmGbXQF2Zl8Te820D/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2015</h2>
+                                    <div class="img-area"><img type="button" data-toggle="modal"
+                                            data-target="#modal2015"
+                                            src="assets/images_fundacion/memorias/Portada 2015.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/143MwovCGa0XSxfZ0KmGiUQEnpML_SwRB/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2016</h2>
+                                    <div class="img-area"><img type="button" data-toggle="modal"
+                                            data-target="#modal2016"
+                                            src="assets/images_fundacion/memorias/Portada 2016.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/1jDaaVdRcRjE7M8IVh7F9xCczmsd38Iiv/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2017</h2>
+                                    <div class="img-area">
+                                        <img type="button" data-toggle="modal" data-target="#modal2017"
+                                            src="assets/images_fundacion/memorias/Portada 2017.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/1MnernLVKgwF1V2PrXps4uTmTCJa8q5Fo/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2018</h2>
+                                    <div class="img-area"><img type="button" data-toggle="modal"
+                                            data-target="#modal2018"
+                                            src="assets/images_fundacion/memorias/Portada 2018.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/16_7uZWm5jpsyBBV3P9GHLOMW4xJwdBa2/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2019</h2>
+                                    <div class="img-area"><img type="button" data-toggle="modal"
+                                            data-target="#modal2019"
+                                            src="assets/images_fundacion/memorias/Portada 2020.png" alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <a class="button_m" target="_blank"
+                                            href="https://drive.google.com/file/d/1soD2cIPlCFd59cjoXW4k6AIotFu7xBZH/view?usp=share_link">
+                                            Descargar Pdf
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2020</h2>
+                                    <div class="img-area"><img src="assets/images_fundacion/memorias/Portada 2019.png"
+                                            alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <button class="button_m">Descargar Pdf</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <h2 class="cabecera-memorias">2021</h2>
+                                    <div class="img-area"><img src="assets/images_fundacion/memorias/Portada 2021.png"
+                                            alt="">
+                                    </div>
+                                    <div class="wrap">
+                                        <button class="button_m">Descargar Pdf</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Memorias Institucionales -->
+    <!-- MODALES -->
+    <!-- Start Modales Nuestras Sedes -->
+    <!-- Modal LA PAZ -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.2634606015185!2d-68.12520528526196!3d-16.512791688608207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f207b3c83b669%3A0xcba6b7c020d8cd15!2sFundacion%20UNIFRANZ!5e0!3m2!1ses!2sbo!4v1676564202929!5m2!1ses!2sbo"
+                        class="mapa" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal EL ALTO-->
+    <div class="modal fade" id="modalelalto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.3454467508222!2d-68.16856568526211!3d-16.508648888610754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf987d0d61c3%3A0xee9818e90cd630b3!2sUnifranz%20El%20Alto!5e0!3m2!1ses!2sbo!4v1676564704304!5m2!1ses!2sbo"
+                        class="mapa" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal COCHABAMBA-->
+    <div class="modal fade" id="modalcba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.762364127858!2d-66.16085928524954!3d-17.375164188085968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e374114e60d289%3A0xa24c22be3cffd741!2sUnifranz%20Cochabamba!5e0!3m2!1ses!2sbo!4v1676565633971!5m2!1ses!2sbo"
+                        class="mapa" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal SANTA CRUZ-->
+    <div class="modal fade" id="modalscz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.375952956001!2d-63.19461128524371!3d-17.774019687848018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7fd21290381%3A0xf8715ec05923efc2!2sUnifranz%20Santa%20Cruz!5e0!3m2!1ses!2sbo!4v1676565974440!5m2!1ses!2sbo"
+                        class="mapa" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modales Nuestras Sedes -->
+    <!-- Start Modales Memorias Institucionales -->
+    <div class="modal fade" id="modal2012" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/1j2yRNZH39mVx9I7s-puZciNh0PrYeP8f/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2013" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/1DIkMiv-FYXuylGKK8Yk2W6A1zdgURmT8/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2014" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/19AS4mXnqhPH58NXZmGbXQF2Zl8Te820D/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2015" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/143MwovCGa0XSxfZ0KmGiUQEnpML_SwRB/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2016" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/1jDaaVdRcRjE7M8IVh7F9xCczmsd38Iiv/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal20171" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/1j2yRNZH39mVx9I7s-puZciNh0PrYeP8f/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2018" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/16_7uZWm5jpsyBBV3P9GHLOMW4xJwdBa2/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2019" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- <iframe src="https://drive.google.com/file/d/1KDoaQEjEGmq_0DIJPuzWP7bpwp_PnUq2/view"
+                     class="mapa" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://drive.google.com/file/d/1soD2cIPlCFd59cjoXW4k6AIotFu7xBZH/preview"
+                        width="100%" height="400px" loading="lazy" allow="autoplay"></iframe>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End Modales Memorias Institucionales -->
+    <!-- Start Modales Infografías -->
+    <!-- Modal Hazlo x Ellos -->
+    <div class="modal fade" id="modalhazloxellos" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <iframe src="assets/Infografias/Infografia Hazlo x ellos.pdf" width="100%" height="450px"
+                        loading="lazy" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Accion Rec -->
+    <div class="modal fade" id="modalaccionrec" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <iframe src="assets/Infografias/Infografia Acción Rec.pdf" width="100%" height="450px"
+                        loading="lazy" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Causa Hay -->
+    <div class="modal fade" id="modalcausahay" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <iframe src="assets/Infografias/Infografia Causa Hay.pdf" width="100%" height="450px"
+                        loading="lazy" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Dóname -->
+    <div class="modal fade" id="modaldoname" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modales">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <iframe src="assets/Infografias/Infografia Doname .pdf" width="100%" height="450px"
+                        loading="lazy" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modales Infografías -->
+    <!-- END MODALES -->
+    <!-- Start Pie De Página -->
+    <footer>
+        <div class="curved-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col align-items-center mt-4">
+                        <h1 class="titulosiguienosen">SIGUENOS EN:
+                            <a href="https://www.facebook.com/FundacionUnifranz" target="_blank">
+                                <img src="assets/images_fundacion/logos-redes/facebook-color.svg"
+                                    class="logoredessociales" />
+                            </a>
+                            <a href=" https://instagram.com/fundacionunifranz?igshid=MDM4ZDc5MmU=" target="_blank">
+                                <img src="assets/images_fundacion/logos-redes/Instagram-color.svg"
+                                    class="logoredessociales" />
+                            </a>
+                            <a href="https://bo.linkedin.com/company/fundacionunifranz" target="_blank">
+                                <img src="assets/images_fundacion/logos-redes/linkedIn-color.svg"
+                                    class="logoredessociales" />
+                            </a>
+                            <a href="https://www.tiktok.com/@fundacionunifranz?_t=8ZlYcXCRRYM&_r=1" target="_blank">
+                                <img src="assets/images_fundacion/logos-redes/tiktok-color.svg"
+                                    class="logoredessociales" />
+                            </a>
+                            <a href="https://www.youtube.com/@fundacionunifranz1529" target="_blank">
+                                <img src="assets/images_fundacion/logos-redes/youtube-color.svg"
+                                    class="logoredessociales" />
+                            </a>
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="wrapperr">
+                    <div class="cardss">
+                        <a href="#" onclick="scrollToTop(event)">
+                            <img src="assets/images_fundacion/seccion_footer/img_fundacion_unifranz.svg"
+                                class="imglogosfundacion icons">
+                        </a>
+                    </div>         
+                    <div class="cardss">
+                        <a href="https://www.clinicaunifranz.org/" target="_blank">
+                            <img src="assets/images_fundacion/seccion_footer/img_clinica_unifranz.svg"
+                                class="imglogosfundacionclinica icons" style="width: 210px;">
+                        </a>
+                    </div>  
+                    <div class="cardss">
+                        <a href="https://unifranz.edu.bo/" target="_blank">
+                            <img src="assets/images_fundacion/seccion_footer/img_unifranz.svg"
+                                class="imglogosfundacionunifranz icons" style="width: 150px;">
+                        </a>
+                    </div>     
+                           
+                    <div class="cardss">
+                        <a href="https://clinicaunifranz.org/seguros" target="_blank">
+                            <img src="assets/images_fundacion/seccion_footer/img_asegurate.svg"
+                                class="imglogosfundacionunifranz icons" style="width: 100px;">
+                        </a>
+                    </div>
+                    <br>
+                </div>
+            </center>
+            <div class="container">
+                <div class="row">
+                    <div class="col align-items-center mt-4">
+                        <span class="text-fin">© 2024 Fundación Unifranz. Derechos Reservados</span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+    </footer>
+    <!-- End Pie De Página -->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="assets/js/scriptFundacionUnifranz.js"></script>
+    <script src="assets/js/contadorDonativos.js"></script>
+</body>
+
+</html>

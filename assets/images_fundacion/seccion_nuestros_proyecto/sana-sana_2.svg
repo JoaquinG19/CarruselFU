@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SANA_SANA" data-name="SANA SANA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.16 351.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4fafa4;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 0 12;
+        stroke-miterlimit: 10;
+      }
+
+      .text-style {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        fill: white;
+      }
+
+      .text-rotated {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: white;
+        transform: rotate(-90deg);
+        text-anchor: middle;
+      }
+
+      .point {
+        fill: white;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M.58,148.69C-.46,120.05-1.77,91.35,3.74,62.97,11.45,23.27,37.91,4.93,78.54,10.21c20.99,2.73,41.19,8.99,61.93,12.86,39.16,7.32,77.04,5.51,113.21-12.9,9.47-4.82,19.36-9.22,30.34-10,13.53-.96,22.44,4.85,27.04,17.42,4.17,11.4,4.85,23.47,6.19,35.24,2.83,24.89,7.36,49.29,15.58,72.98,18.72,53.96,7.2,104.42-18.89,152.8-18.5,34.29-45.92,58.97-84.79,68.94-36.59,9.39-71.42,1.97-104.87-13.42C57.37,303.35,19.23,250.82,5.16,180.12c-2.07-10.42-3.81-20.83-4.58-31.43Z"/>
+  <path class="cls-2" d="M10.39,148.97c-.99-27.13-2.23-54.32,2.99-81.2C20.69,30.16,45.75,12.78,84.24,17.79c19.89,2.59,39.02,8.52,58.66,12.19,37.1,6.93,72.98,5.22,107.25-12.22,8.98-4.57,18.34-8.73,28.74-9.47,12.82-.91,21.26,4.6,25.62,16.5,3.95,10.8,4.6,22.24,5.86,33.38,2.68,23.58,6.97,46.7,14.76,69.14,17.73,51.12,6.82,98.92-17.89,144.75-17.52,32.49-43.5,55.86-80.32,65.31-34.67,8.89-67.66,1.87-99.35-12.72-63.38-29.16-99.51-78.93-112.84-145.91-1.96-9.87-3.61-19.73-4.34-29.77Z"/>
+  <!-- Primera columna: Texto rotado 270 grados -->
+  <text x="-150" y="70" class="text-rotated">PRODREMOS</text>
+  <text x="-150" y="100" class="text-rotated">ENCONTRAR:</text>
+
+  <!-- Segunda columna: Puntos y texto -->
+  <circle cx="140" cy="55" r="5" class="point"/>
+  <text x="150" y="60" class="text-style">Peluches sana sana</text>
+
+  <circle cx="140" cy="75" r="5" class="point"/>
+  <text x="150" y="80" class="text-style">Tomatodos</text>
+
+  <circle cx="140" cy="95" r="5" class="point"/>
+  <text x="150" y="100" class="text-style">Tazas</text>
+
+  <circle cx="140" cy="115" r="5" class="point"/>
+  <text x="150" y="120" class="text-style">Botones / Pines</text>
+
+  <circle cx="140" cy="135" r="5" class="point"/>
+  <text x="150" y="140" class="text-style">Llaveros</text>
+
+  <circle cx="140" cy="155" r="5" class="point"/>
+  <text x="150" y="160" class="text-style">Bolsas</text>
+
+  <circle cx="140" cy="175" r="5" class="point"/>
+  <text x="150" y="180" class="text-style">Poleras</text>
+
+  <circle cx="140" cy="195" r="5" class="point"/>
+  <text x="150" y="200" class="text-style">Chamarras</text>
+
+  <circle cx="140" cy="215" r="5" class="point"/>
+  <text x="150" y="220" class="text-style">Almohadas</text>
+  <!-- Añadir más puntos y textos según sea necesario -->
+</svg>
